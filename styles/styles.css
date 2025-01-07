@@ -79,7 +79,6 @@ main{
     border-radius: 10px 10px 0px 0px;
     margin: 0;
     background-color: var(--primary-color);
-    font-size: 20px;
     font-family: var(--font);
     color: var(--accent-color);
     text-align: center;
