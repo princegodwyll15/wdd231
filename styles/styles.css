@@ -192,6 +192,9 @@ footer p{
        grid-template-rows: auto auto;
        margin: 1rem 0 1rem 0;
     }
+    .course-work h2, .country-city h2, .certifications h2{
+        font-size: 16px;
+    }
     .first-row p{
         width: 98%;
         margin: 2%;
