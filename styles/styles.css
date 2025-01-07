@@ -155,6 +155,9 @@ footer p{
 }
 
 @media screen and (max-width:789px) {
+    h1{
+        font-size: 30px;
+    }
     nav{
         display: none;
     }
