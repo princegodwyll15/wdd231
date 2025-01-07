@@ -28,6 +28,9 @@ header{
 .header-content img {
     background: transparent;
 }
+.hamburger{
+    display: none;
+}
 
 nav{
     background-color: var(--primary-color);
@@ -158,8 +161,31 @@ footer p{
     h1{
         font-size: 30px;
     }
+    .open{
+        display: block;
+    }
+    .hamburger::before{
+        content: "☰";
+    }
+    .hamburger.open::before{
+          content: "❎";
+    }
+    .hamburger{
+        text-align: right;
+        display: block;
+        font-size: 60px;
+        cursor: pointer;
+    }
     nav{
         display: none;
+    }
+    nav ul{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li a{
+        width: 100%;
     }
     .hero-container{
        grid-template-columns: 1fr;
