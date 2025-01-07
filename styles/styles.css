@@ -74,7 +74,7 @@ main{
 }
 .course-work, .country-city, .certifications{
     background-color: var(--accent-color);
-    height: 50vh;
+    height: auto;
 }
 .course-work h2, .country-city h2, .certifications h2{
     border-radius: 10px 10px 0px 0px;
@@ -99,7 +99,6 @@ main{
 }
 
 .certifications{
-    margin-top: 2%;
     height: auto;
 }
 .certifications hr{
