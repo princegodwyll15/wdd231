@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta
       name="description"
-      content="basic structure or wireframe of my hompage">
-    <meta name="author" content="Prince Godwyll">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      content="Basic structure or wireframe of my homepage"
+    />
+    <meta name="author" content="Prince Godwyll" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Course Home Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
   </head>
   <body>
     <header>
-      <div class="header-content">
-        <img
-          src="images/profile.jpg"
-          alt="my pic"
-          loading="lazy"
-          width="100"
-          height="100">
-        <h1>prince podwyll</h1>
-      <div class="hamburger"></div>
-    </div>
-      <nav>
-        <ul>
-          <li><a class="active" href="#course-work">Home</a></li>
-          <li><a href="#">Chamber Site</a></li>
-          <li><a href="https://github.com/princegodwyll15" target="_blank">GitHub Profile</a></li>
-          <li><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
-        </ul>
-      </nav>
+      <img
+        src="images/profile.jpg"
+        alt="My Profile Picture"
+        loading="lazy"
+        width="50"
+        height="50"
+      />
+      <span>Prince Podwyll</span>
+      <span class="hamburger" aria-label="Menu toggle"></span>
     </header>
+    <nav>
+      <ul>
+        <li>
+          <a
+            class="active"
+            href="#course-work"
+            title="Go to Course Work section"
+            >Home</a
+          >
+        </li>
+        <li><a href="#" title="Go to Chamber Site">Chamber Site</a></li>
+        <li>
+          <a
+            href="https://github.com/princegodwyll15"
+            target="_blank"
+            title="Visit my GitHub profile"
+            >GitHub Profile</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/feed/"
+            target="_blank"
+            title="Visit my LinkedIn profile"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </nav>
     <main>
+      <h1>Home</h1>
       <div class="hero-container">
         <section class="course-work" id="course-work">
           <h2>Course Work</h2>
@@ -46,28 +71,28 @@
           </ul>
         </section>
         <section class="country-city">
-            <h2>Accra, Ghana</h2>
-          <img src="images/museum.jpg" alt="">
+          <h2>Accra, Ghana</h2>
+          <img src="images/museum.jpg" alt="Kwame Museum, Accra" />
           <p>Kwame Museum, Accra.</p>
         </section>
       </div>
       <section class="certifications">
-        <h2>Web and Computer programming Certificates</h2>
-        <div class="first-row">
-              <p>All</p>
-              <p>CSE</p>
-              <p>WDD</p>
+        <h2>Web and Computer Programming Certificates</h2>
+        <div class="certification-categories">
+          <p>All</p>
+          <p>CSE</p>
+          <p>WDD</p>
         </div>
-        <hr>
-        <div class="second-row">
-              <p>CSE 110</p>
-              <p>WDD 130</p>
-              <p>CSE 111</p>
+        <hr />
+        <div class="certification-list">
+          <p>CSE 110</p>
+          <p>WDD 130</p>
+          <p>CSE 111</p>
         </div>
-        <div class="third-row"> 
-              <p>CSE 210</p>
-              <p>WDD 131</p>
-              <p>WDD 231</p>
+        <div class="certification-list highlight">
+          <p>CSE 210</p>
+          <p>WDD 131</p>
+          <p>WDD 231</p>
         </div>
       </section>
     </main>
@@ -75,6 +100,6 @@
       <p id="year"></p>
       <p id="lastModified"></p>
     </footer>
-    <script  src="scripts/script.js" defer></script>
+    <script src="scripts/script.js" defer></script>
   </body>
 </html>
