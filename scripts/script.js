@@ -79,23 +79,30 @@ function createCourseItem() {
     buttonContents.forEach(content => {
       const categoryButton = document.createElement("button");
       categoryButton.textContent = content;
+      categoryButton.addEventListener("click", () => filterCourses(content));
       certificateCategories.appendChild(categoryButton);
     });
     certificateContainer.appendChild(certificateCategories);
   
     const coursesContainer = document.createElement('div');
     coursesContainer.classList.add('courses');
-    courses.forEach((course) => {
-      const courseItem = document.createElement("button");
-      courseItem.textContent = `${course.subject} ${course.number}`;
-      coursesContainer.appendChild(courseItem);
-    });
     certificateContainer.appendChild(coursesContainer);
+  
+    function filterCourses(category) {
+      coursesContainer.innerHTML = ""; // Clear previous courses
+      const filteredCourses = category === "All" ? courses : courses.filter(course => course.subject === category);
+      filteredCourses.forEach((course) => {
+        const courseItem = document.createElement("button");
+        courseItem.textContent = `${course.subject} ${course.number}`;
+        coursesContainer.appendChild(courseItem);
+      });
+    }
+  
+    // Initially display all courses
+    filterCourses("All");
   }
   
-  createCourseItem();
-  
-  
+  createCourseItem();  
 //footer content
 const year = document.getElementById("year");
 const lastModified = document.getElementById("lastModified");

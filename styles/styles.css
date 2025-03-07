@@ -159,13 +159,13 @@ main h1 {
   font-family: var(--font);
 }
 
-.courses button:nth-child(4), .courses button:nth-child(6) {
+.courses button:nth-child(6) {
  background-color: var(--primary-color) !important;
  color: var(--accent-color) !important;
 }
 
 .certificate-categories button {
-  font-weight: 700;
+  font-weight: 700;cursor: pointer;
   border: none;
   outline: none;
   text-align: center;
@@ -175,6 +175,11 @@ main h1 {
   color: var(--accent-color);
   font-family: var(--font);
 }
+
+.certificate-categories button:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+} 
 
 footer {
   width: 100%;
