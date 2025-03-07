@@ -167,17 +167,18 @@ main h1 {
 .certificate-categories button {
   font-weight: 700;cursor: pointer;
   border: none;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
   outline: none;
   text-align: center;
   width: 10%;
-  background-color: var(--secondary-color);
   padding: 1rem 1rem;
-  color: var(--accent-color);
   font-family: var(--font);
+  transition: background ease .2s;
 }
 
 .certificate-categories button:hover {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--accent-color);
 } 
 
