@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- d,d,d,d,d -->
+</body>
+<script>
+
+//asynchronous function
+// function doStep1(init, callback) {
+//   const result = init + 1;
+//   callback(result);
+// }
+
+// function doStep2(init, callback) {
+//   const result = init + 2;
+//   callback(result);
+// }
+
+// function doStep3(init, callback) {
+//   const result = init + 3;
+//   callback(result);
+// }
+
+// function doOperation() {
+//   doStep1(0, (result1) => {
+//     doStep2(result1, (result2) => {
+//       doStep3(result2, (result3) => {
+//         console.log(`result: ${result3}`);
+//       });
+//     });
+//   });
+// }
+
+// doOperation();
+
+
+// Asynchronous functions
+// async function doStep1(init) {
+//   return init + 1;
+// }
+
+// async function doStep2(init) {
+//   return init + 2;
+// }
+
+// async function doStep3(init) {
+//   return init + 3;
+// }
+
+// // Main asynchronous function
+// async function doOperation() {
+//   const result1 = await doStep1(0);
+//   const result2 = await doStep2(result1);
+//   const result3 = await doStep3(result2);
+//   console.log(`Result: ${result3}`);
+// }
+
+// doOperation();
+
+
+// Asynchronous functions
+function doStep1(init) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const result = init + 1;
+      resolve(result); // Resolve the promise with the result
+    }, 1000);
+  });
+}
+
+function doStep2(init) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const result = init + 2;
+      if (result > 5) {
+        reject("Result is greater than 5"); // Reject the promise with an error
+      } else {
+        resolve(result); // Resolve the promise with the result
+      }
+    }, 1000);
+  });
+}
+
+function doStep3(init) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const result = init + 3;
+      resolve(result); // Resolve the promise with the result
+    }, 1000);
+  });
+}
+
+// Main asynchronous function
+async function doOperation() {
+  try {
+    const result1 = await doStep1(0);
+    console.log(`Result 1: ${result1}`);
+    const result2 = await doStep2(result1);
+    console.log(`Result 2: ${result2}`);
+    const result3 = await doStep3(result2);
+    console.log(`Result 3: ${result3}`);
+  } catch (error) {
+    console.error(`Error: ${error}`);
+  }
+}
+
+// Call the main asynchronous function
+doOperation();
+
+
+
+
+</script>
+</html>
