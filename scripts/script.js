@@ -41,7 +41,7 @@ const courses = [
     description:
       "This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.",
     technology: ["C#"],
-    completed: false,
+    completed: true,
   },
   {
     subject: "WDD",
@@ -66,43 +66,61 @@ const courses = [
     completed: false,
   },
 ];
+
 function createCourseItem() {
-    const certificateContainer = document.querySelector(".certifications");
-  
-    const sectionHead = document.createElement("h2");
-    sectionHead.textContent = "Web and Computer Programming Certificates";
-    certificateContainer.appendChild(sectionHead);
-  
-    const certificateCategories = document.createElement('div');
-    certificateCategories.classList.add('certificate-categories');
-    const buttonContents = ["All", "WDD", "CSE"];
-    buttonContents.forEach(content => {
-      const categoryButton = document.createElement("button");
-      categoryButton.textContent = content;
-      categoryButton.addEventListener("click", () => filterCourses(content));
-      certificateCategories.appendChild(categoryButton);
-    });
-    certificateContainer.appendChild(certificateCategories);
-  
-    const coursesContainer = document.createElement('div');
-    coursesContainer.classList.add('courses');
-    certificateContainer.appendChild(coursesContainer);
-  
-    function filterCourses(category) {
-      coursesContainer.innerHTML = ""; // Clear previous courses
-      const filteredCourses = category === "All" ? courses : courses.filter(course => course.subject === category);
-      filteredCourses.forEach((course) => {
-        const courseItem = document.createElement("button");
-        courseItem.textContent = `${course.subject} ${course.number}`;
-        coursesContainer.appendChild(courseItem);
-      });
+  const certificateContainer = document.querySelector(".certifications");
+
+  const sectionHead = document.createElement("h2");
+  sectionHead.textContent = "Web and Computer Programming Certificates";
+  certificateContainer.appendChild(sectionHead);
+
+  const certificateCategories = document.createElement('div');
+  certificateCategories.classList.add('certificate-categories');
+  const courseFilter = ["All", "WDD", "CSE", "Taken"];
+
+  courseFilter.forEach(content => {
+    const filterButton = document.createElement("button");
+    filterButton.textContent = content;
+
+    filterButton.addEventListener("click", () => filterCourses(content));
+    certificateCategories.appendChild(filterButton);
+  });
+  certificateContainer.appendChild(certificateCategories);
+
+  const coursesContainer = document.createElement('div');
+  coursesContainer.classList.add('courses');
+  certificateContainer.appendChild(coursesContainer);
+
+  const totalCredits = document.createElement('h3');
+  certificateContainer.appendChild(totalCredits);
+
+  function filterCourses(category) {
+    coursesContainer.innerHTML = ""; // Clear previous courses
+    let total = 0;
+    let filteredCourses;
+    if (category === "All") {
+      filteredCourses = courses;
+    } else if (category === "Taken") {
+      filteredCourses = courses.filter(course => course.completed);
+    } else {
+      filteredCourses = courses.filter(course => course.subject === category);
     }
-  
-    // Initially display all courses
-    filterCourses("All");
+    filteredCourses.forEach((course) => {
+      const courseItem = document.createElement("button");
+      courseItem.textContent = `${course.subject} ${course.number}`;
+      coursesContainer.appendChild(courseItem);
+      total += course.credits;
+    });
+
+    totalCredits.textContent = `Total Credits = ${total}`;
   }
-  
-  createCourseItem();  
+
+  // Initially display all courses
+  filterCourses("All");
+}
+
+createCourseItem();
+
 //footer content
 const year = document.getElementById("year");
 const lastModified = document.getElementById("lastModified");
@@ -118,5 +136,5 @@ const currentDate = new Date();
 const getYear = currentDate.getFullYear();
 const getLastModified = new Date(document.lastModified).toLocaleString();
 
-year.textContent = `🧑‍💻👨‍💻 ©${getYear} Prince Godwyll 🧑‍💻👨‍💻, Ghana.`;
-lastModified.textContent = `Last Update: ${getLastModified}`;
+year.textContent = `👨‍💻 ©${getYear} Prince Godwyll 🧑‍💻, Ghana.`;
+lastModified.textContent = `Last Updated: ${getLastModified}`;

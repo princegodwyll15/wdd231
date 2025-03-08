@@ -122,11 +122,11 @@ main h1 {
   height: auto;
 }
 
-.certifications hr {
-  width: 90%;
-  margin: auto;
+.certifications h3{
+  font-family: var(--font);
+  text-align: center;
+  color: var(--primary-color);
 }
-
 .certificate-categories {
   display: flex;
   border-bottom: 1px solid var(--primary-color);
@@ -149,12 +149,12 @@ main h1 {
 .courses button {
   font-weight: 700;
   border: none;
-  margin: 1rem;
+  margin: 1rem auto;
   outline: none;
   text-align: center;
+  padding: .5rem;
   width: 30%;
   background-color: var(--secondary-color);
-  padding: 1rem 1rem;
   color: var(--accent-color);
   font-family: var(--font);
 }
@@ -165,13 +165,14 @@ main h1 {
 }
 
 .certificate-categories button {
+  border-radius: 10px;
   font-weight: 700;cursor: pointer;
   border: none;
   background-color: var(--primary-color);
   color: var(--accent-color);
   outline: none;
   text-align: center;
-  width: 10%;
+  width: 15%;
   padding: 1rem 1rem;
   font-family: var(--font);
   transition: background ease .2s;
@@ -226,6 +227,7 @@ footer p {
     margin: 0;
     padding: 0;
   }
+
   .hero-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
