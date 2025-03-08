@@ -96,7 +96,6 @@ function createCourseItem() {
 
   function filterCourses(category) {
     coursesContainer.innerHTML = ""; // Clear previous courses
-    let total = 0;
     let filteredCourses;
     if (category === "All") {
       filteredCourses = courses;
@@ -109,12 +108,11 @@ function createCourseItem() {
       const courseItem = document.createElement("button");
       courseItem.textContent = `${course.subject} ${course.number}`;
       coursesContainer.appendChild(courseItem);
-      total += course.credits;
     });
 
+    const total = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     totalCredits.textContent = `Total Credits = ${total}`;
   }
-
   // Initially display all courses
   filterCourses("All");
 }
