@@ -1,0 +1,93 @@
+:root{
+    --font: "Roboto", sans-serif;
+    --primary-color: #f3f3f3;
+}
+
+*{
+    font-family: var(--font);
+}
+header{
+    background-color: black;
+    color: var(--primary-color);
+}
+header h1{
+    padding: 1.5rem;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.filtercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtercontainer button{
+    border: none;
+    outline: none;
+    font-family: var(--font);
+    font-size: 14px;
+    padding: .5rem;
+    cursor: pointer;
+    margin: 1rem;
+    transition: background ease .3s;
+}
+.filtercontainer button:hover{
+    background-color: black;
+    color: var(--primary-color);
+}
+
+#cards{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 6px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section{
+    width: 90%;
+    margin: auto;
+    text-align: center; /* Center align text and images */
+}
+
+h2{
+    font-size: 1rem;
+}
+
+img{
+    border-radius: 10px;
+    transition: transform ease .2s;
+    display: block; /* Make the image a block element */
+    margin: 1% auto; /* Center the image horizontally */
+}
+
+img:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+footer{
+    background-color: black;
+    color: var(--primary-color);
+    padding: 1.5rem;
+    text-align: center;
+    font-variant: small-caps;
+    margin-top: 1rem;
+}
+
+/* Media Query for small screens */
+@media screen and (max-width: 600px) {
+    .filtercontainer {
+        flex-direction: column;
+        margin-top: -20px;
+        padding: 0;
+    }
+    .filtercontainer button {
+        width: 100%;
+        margin: 0;
+    }
+    section {
+        width: 100%; /* Adjust section width for small screens */
+    }
+}

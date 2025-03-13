@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo">Fetch a file to change this text.</p>
+    <script>
+      let file = "me.txt";
+
+      file = fetch(file)
+        // .then((x) => x.text())
+        // .then((y) => (document.getElementById("demo").innerHTML = y))
+        // .catch((error) => (document.getElementById("demo").innerHTML = error));
+        console.log(file);
+    </script>
+  </body>
+</html>

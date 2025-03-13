@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //synchoronous function
+    function add(num1, num2){
+        return num1 + num2;
+    }
+    
+    function subtract(num1, num2){
+        return num1 - num2;
+    }
+    
+    function divide(num1, num2){
+        if(num2 !== 0){
+            return num1 / num2;
+        } else {
+            return "Error: Division by zero is not allowed.";
+        }
+    }
+    
+    function doOperation(){
+        const result1 = add(4, 5);
+        const result2 = subtract(9, 4);
+        const result3 = divide(8, 4);
+        
+        console.log("Addition result:", result1);
+        console.log("Subtraction result:", result2);
+        console.log("Division result:", result3);
+    }
+    
+    doOperation();
+</script>
+</html>
