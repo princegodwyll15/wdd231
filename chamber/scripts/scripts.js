@@ -123,7 +123,7 @@ function displayMembersCard(members) {
     });
 }
 document.addEventListener('DOMContentLoaded', () =>{
-    currentView = 'list';
+    currentView = 'card';
     getMembers();
 })
 

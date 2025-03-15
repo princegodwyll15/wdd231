@@ -148,13 +148,13 @@ tbody td img:hover {
 
 .member-card {
     background-color: var(--background-color);
-    min-width: 400px;
     color: var(--text-color);
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
     padding: 1rem;
     margin: 1rem auto;
-    width: 50%;
+    width: 90%;
+    max-width: 900px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform ease .2s;
     text-align: justify;
@@ -319,6 +319,10 @@ footer .footer-social-media i{
         display: block;
         padding: 1rem;
     }
+    .member-card:hover {
+        transform: scale(1);
+    }
+    
 
     footer{
         font-size: 12px;
