@@ -1,0 +1,326 @@
+:root{
+    --primary-color: #010101;
+    --secondary-color: #960037;
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --font: "Kanit", sans-serif;
+}
+
+main{
+    position: relative;
+}
+body{
+    font-family: var(--font);
+}
+
+header{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    color: var(--text-color);
+    padding: .5rem;
+}
+header h1{
+    font-size: 20px;
+    margin: .5rem;
+}
+
+.head-container{
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+}
+.head-container img{
+    width: 30px;
+    object-fit: contain;
+    height: 30px;
+}
+.hamburger{
+    display: none;
+}
+nav{
+    display: inline-block;
+}
+
+nav ul > li{
+    list-style-type: none;
+    display: inline;
+}
+nav ul > li > a{
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 1rem;
+    transition: border ease .2s;
+}
+nav ul > li > a:hover{
+    border-bottom: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.container-button button{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 1rem;
+}
+
+.toggleDisplay{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.toggleDisplay button{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    color:var(--text-color);
+    font-size: 20px;
+    outline: none;
+    border: none;
+    transition: ease-out .3s;
+}
+
+.toggleDisplay button:hover{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.directory{
+    width: 100%;
+}
+
+.directory table {
+    width: 98%;
+    margin: 1% auto;
+    border-collapse: collapse;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+thead {
+    background-color: var(--primary-color);
+}
+
+thead th {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--primary-color);
+}
+
+tbody tr:hover {
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+tbody td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+tbody td a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+tbody td a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+tbody td img {
+    border-radius: 10px;
+    transition: transform ease .2s;
+    display: block;
+    margin: 0 auto;
+}
+
+tbody td img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.member-card {
+    background-color: var(--background-color);
+    min-width: 400px;
+    color: var(--text-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform ease .2s;
+    text-align: justify;
+}
+
+.member-card img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.member-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-card p {
+    margin: 0.5rem 0;
+}
+
+.member-card a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.member-card a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+footer .footer-info{
+    padding: 1rem;
+}
+
+footer .footer-nav a{
+    display: block;
+    padding: .5rem;
+    color: var(--text-color);
+    transition: color ease .3s;
+}
+.nav-social{
+    display: flex;
+}
+
+footer .footer-nav a:hover, footer .footer-social-media i:hover{
+    color: var(--secondary-color);
+}
+
+.footer-social-media{
+    display: flex;
+}
+footer .footer-social-media i{
+    font-size: 16px;
+    margin: .1rem;
+    color: var(--text-color);
+    transition: color ease .3s;
+}
+
+.footer-last-modified{
+    padding: .5rem;
+}
+
+/* Media Query for small screens */
+@media screen and (max-width: 600px) {
+    .container-button{
+        display: none;
+    }
+    header h1{
+        font-size: 16px;
+    }
+    nav{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .directory table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .directory table thead, .directory table tbody, .directory table th, .directory table td, .directory table tr {
+        display: block;
+    }
+
+    .directory table th, .directory table td {
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .directory table tr {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .directory table thead {
+        display: block;
+        width: 100%;
+    }
+
+    .directory table thead th {
+        width: 100%;
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-color);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    #nav-menu.active {
+        display: flex;
+    }
+
+    #nav-menu ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav-menu ul li {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+    #nav-menu ul li a {
+        width: 100%;
+        display: block;
+        padding: 1rem;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+}

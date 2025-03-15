@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main{
+    width: 100%;
+}
+
+section, header{
+    width: 80%;
+    margin: 0 auto;
+}
+h2{
+    font-size: 18px;
+    margin-top: 1.5rem;
+}
+
+section > ul{
+    margin-left: 2rem;
+}
+.wireframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
