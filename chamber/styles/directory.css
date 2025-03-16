@@ -189,10 +189,6 @@ footer .footer-nav a {
     transition: color ease 0.3s;
 }
 
-.nav-social {
-    display: flex;
-}
-
 footer .footer-nav a:hover,
 footer .footer-social-media i:hover {
     color: var(--secondary-color);
@@ -202,7 +198,7 @@ footer .footer-social-media i:hover {
     display: flex;
 }
 
-footer .footer-social-media i {
+footer .footer-social-media i, .footer-social-media a{
     font-size: 16px;
     margin: 0.1rem;
     color: var(--text-color);
