@@ -9,6 +9,11 @@
 main {
     position: relative;
 }
+h2{
+    font-family: var(--font);
+    color: var(--secondary-color);
+    margin-left: 20px;
+}
 
 body {
     font-family: var(--font);
