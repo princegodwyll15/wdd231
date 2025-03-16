@@ -204,18 +204,11 @@ footer .footer-social-media i:hover {
     display: flex;
 }
 
-footer .footer-social-media i, .footer-social-media a{
-    font-size: 16px;
-    margin: 0.1rem;
-    color: var(--text-color);
-    transition: color ease 0.3s;
-}
-
 .footer-last-modified {
     padding: 0.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
     header h1 {
         font-size: 16px;
     }
