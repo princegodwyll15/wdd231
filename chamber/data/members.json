@@ -4,7 +4,7 @@
       "address": "123 Innovation Drive, Silicon Valley, CA",
       "phone": "+1-800-123-4567",
       "website": "https://www.techinnovators.com",
-      "image": "./images/icons8-wind-48.png",
+      "image": "./images/business-img (1).png",
       "membership_level": 3
     },
     {
@@ -12,7 +12,7 @@
       "address": "456 Eco Street, Portland, OR",
       "phone": "+1-800-234-5678",
       "website": "https://www.greenenergysolutions.com",
-      "image": "./images/icons8-wind-48.png",
+      "image": "./images/business-img (2).png",
       "membership_level": 2
     },
     {
@@ -20,7 +20,7 @@
       "address": "789 Wellness Blvd, Austin, TX",
       "phone": "+1-800-345-6789",
       "website": "https://www.healthylivingco.com",
-      "image": "./images/icons8-wind-48.png",
+      "image": "./images/business-img (3).png",
       "membership_level": 1
     },
     {
@@ -28,7 +28,7 @@
       "address": "101 Finance Avenue, New York, NY",
       "phone": "+1-800-456-7890",
       "website": "https://www.globalfinancegroup.com",
-      "image": "./images/icons8-wind-48.png",
+      "image": "./images/business-img (4).png",
       "membership_level": 3
     },
     {
@@ -36,7 +36,7 @@
       "address": "202 Artistry Lane, Los Angeles, CA",
       "phone": "+1-800-567-8901",
       "website": "https://www.creativedesigns.com",
-      "image": "./images/icons8-wind-48.png",
+      "image": "./images/business-img (5).png",
       "membership_level": 2
       
     },
@@ -45,7 +45,7 @@
       "address": "303 Tech Park, Seattle, WA",
       "phone": "+1-800-678-9012",
       "website": "https://www.techsupportservices.com",
-      "image": "./images/icons8-wind-48.png",
+      "image": "./images/business-img (6).png",
       "membership_level": 1
          },
     {
@@ -53,7 +53,7 @@
       "address": "404 Travel Road, Miami, FL",
       "phone": "+1-800-789-0123",
       "website": "https://www.luxurytravelagency.com",
-      "image": "./images/icons8-wind-48.png",
+      "image": "./images/business-img (7).png",
       "membership_level": 3
     }
   ]
