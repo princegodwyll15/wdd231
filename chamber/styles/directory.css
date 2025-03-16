@@ -209,6 +209,12 @@ footer .footer-social-media i:hover {
 }
 
 @media screen and (max-width: 320px) {
+    .list h2, .list p, .list a {
+        font-size: 12px;
+        margin: .5rem;
+        text-align: left;
+    }
+
     header h1 {
         font-size: 16px;
     }
@@ -316,7 +322,12 @@ footer .footer-social-media i:hover {
         width: 17%;
         font-size: 12px;
     }
-
+    .list h2, .list p, .list a {
+        font-size: 12px;
+        margin: .5rem;
+        text-align: left;
+    }
+    
     footer {
         font-size: 14px;
     }
