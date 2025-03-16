@@ -4,62 +4,56 @@
       "address": "123 Innovation Drive, Silicon Valley, CA",
       "phone": "+1-800-123-4567",
       "website": "https://www.techinnovators.com",
-      "image": "../images/icons8-wind-48.png",
-      "membership_level": 3,
-      "description": "Leading the way in tech innovation and development."
+      "image": "./images/icons8-wind-48.png",
+      "membership_level": 3
     },
     {
       "name": "Green Energy Solutions",
       "address": "456 Eco Street, Portland, OR",
       "phone": "+1-800-234-5678",
       "website": "https://www.greenenergysolutions.com",
-      "image": "../images/icons8-wind-48.png",
-      "membership_level": 2,
-      "description": "Providing sustainable energy solutions for a greener future."
+      "image": "./images/icons8-wind-48.png",
+      "membership_level": 2
     },
     {
       "name": "Healthy Living Co.",
       "address": "789 Wellness Blvd, Austin, TX",
       "phone": "+1-800-345-6789",
       "website": "https://www.healthylivingco.com",
-      "image": "../images/icons8-wind-48.png",
-      "membership_level": 1,
-      "description": "Promoting healthy lifestyles and wellness products."
+      "image": "./images/icons8-wind-48.png",
+      "membership_level": 1
     },
     {
       "name": "Global Finance Group",
       "address": "101 Finance Avenue, New York, NY",
       "phone": "+1-800-456-7890",
       "website": "https://www.globalfinancegroup.com",
-      "image": "../images/icons8-wind-48.png",
-      "membership_level": 3,
-      "description": "Providing financial services and investment solutions worldwide."
+      "image": "./images/icons8-wind-48.png",
+      "membership_level": 3
     },
     {
       "name": "Creative Designs Ltd.",
       "address": "202 Artistry Lane, Los Angeles, CA",
       "phone": "+1-800-567-8901",
       "website": "https://www.creativedesigns.com",
-      "image": "../images/icons8-wind-48.png",
-      "membership_level": 2,
-      "description": "Innovative design solutions for modern businesses."
+      "image": "./images/icons8-wind-48.png",
+      "membership_level": 2
+      
     },
     {
       "name": "Tech Support Services",
       "address": "303 Tech Park, Seattle, WA",
       "phone": "+1-800-678-9012",
       "website": "https://www.techsupportservices.com",
-      "image": "../images/icons8-wind-48.png",
-      "membership_level": 1,
-      "description": "Providing reliable tech support and IT services."
-    },
+      "image": "./images/icons8-wind-48.png",
+      "membership_level": 1
+         },
     {
       "name": "Luxury Travel Agency",
       "address": "404 Travel Road, Miami, FL",
       "phone": "+1-800-789-0123",
       "website": "https://www.luxurytravelagency.com",
-      "image": "../images/icons8-wind-48.png",
-      "membership_level": 3,
-      "description": "Offering exclusive travel packages and luxury experiences."
+      "image": "./images/icons8-wind-48.png",
+      "membership_level": 3
     }
   ]
