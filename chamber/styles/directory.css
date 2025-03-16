@@ -212,6 +212,11 @@ footer .footer-social-media i:hover {
 .footer-social-media {
     display: flex;
 }
+.footer-social-media img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
 
 .footer-last-modified {
     padding: 0.5rem;
