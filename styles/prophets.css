@@ -1,97 +1,114 @@
-:root{
+:root {
     --font: "Roboto", sans-serif;
-    --primary-color: #f3f3f3;
+    --primary-color: #ffffff; /* White */
+    --secondary-color: #2c3e50; /* Dark blue-gray */
+    --accent-color: #000000; /* Blue */
+    --text-color: #333; /* Dark Gray */
+    --button-hover: #1c2833; /* Darker shade */
 }
 
-*{
+* {
     font-family: var(--font);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    background-color: black;
+
+/* Header */
+header {
+    background-color: var(--secondary-color);
     color: var(--primary-color);
-}
-header h1{
-    padding: 1.5rem;
     text-align: center;
+    padding: 1.5rem;
     font-variant: small-caps;
 }
 
-.filtercontainer{
+/* Filter Buttons */
+.filtercontainer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.filtercontainer button{
-    border: none;
-    outline: none;
-    font-family: var(--font);
-    font-size: 14px;
-    padding: .5rem;
-    cursor: pointer;
+    gap: 10px;
     margin: 1rem;
-    transition: background ease .3s;
-}
-.filtercontainer button:hover{
-    background-color: black;
-    color: var(--primary-color);
 }
 
-#cards{
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 6px 2px rgba(0, 0, 0, 0.1);
+.filtercontainer button {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
     border-radius: 5px;
-    background-color: var(--primary-color);
+    transition: background 0.3s ease;
+}
+
+.filtercontainer button:hover {
+    background: var(--button-hover);
+}
+
+/* Prophet Cards */
+#cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-
-section{
-    width: 90%;
+    gap: 20px;
+    padding: 1rem;
+    max-width: 1200px;
     margin: auto;
-    text-align: center; /* Center align text and images */
 }
 
-h2{
-    font-size: 1rem;
-    padding: .5rem;
-}
-
-img{
-    border-radius: 10px;
-    transition: transform ease .2s;
-    display: block; /* Make the image a block element */
-    margin: 1% auto; /* Center the image horizontally */
-}
-
-img:hover{
-    cursor: pointer;
-    transform: scale(1.01);
-}
-
-footer{
-    background-color: black;
-    color: var(--primary-color);
-    padding: 1.5rem;
+section {
+    background: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
     text-align: center;
-    font-variant: small-caps;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    transition: transform 0.2s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1.5rem;
     margin-top: 1rem;
 }
 
-/* Media Query for small screens */
+/* Responsive for Small Screens */
 @media screen and (max-width: 600px) {
     .filtercontainer {
         flex-direction: column;
-        margin-top: -20px;
-        padding: 0;
+        gap: 5px;
     }
+    
     .filtercontainer button {
-        width: 100%;
-        margin: 0;
-    }
-    section {
-        width: 100%; /* Adjust section width for small screens */
+        width: 90%;
     }
 }

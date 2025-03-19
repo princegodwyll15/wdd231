@@ -1,20 +1,14 @@
 :root {
-    --primary-color: #010101;
-    --secondary-color: #960037;
-    --background-color: #000000;
+    --primary-color:#F5F5F5;
+    --secondary-color: #FFD700;
+    --background-color:#002147;
     --text-color: #ffffff;
     --font: "Open Sans", sans-serif;
 }
-
-main {
-    position: relative;
+html{
+    scroll-behavior: smooth;
 }
 
-main > h2 {
-    font-family: var(--font);
-    color: var(--secondary-color);
-    padding: 10px;
-}
 
 body {
     font-family: var(--font);
@@ -58,14 +52,15 @@ nav ul > li {
 }
 
 nav ul > li > a {
+    opacity: 0.8;
     color: var(--text-color);
     text-decoration: none;
     margin: 1rem;
-    transition: border ease 0.2s;
+    transition: opacity ease 0.2s;
 }
 
 nav ul > li > a:hover {
-    border-bottom: 1px solid var(--secondary-color);
+    opacity: 1;
     color: var(--secondary-color);
 }
 
@@ -100,7 +95,7 @@ main{
 
 main h1{
     font-size: 20px;
-    color: var(--secondary-color);
+    color: var(--background-color);
     margin: 1rem;    
 }
 .directory {
@@ -133,15 +128,14 @@ main h1{
 .card h2 {
     font-size: 1.2em;
     margin-bottom: 5px;
-    color: var(--text-color);
-}
+    color: var(--background-color);}
 
 .card p,
 .card a,
 .list a {
     font-size: 1em;
     margin-bottom: 5px;
-    color: var(--text-color);
+    color: var(--background-color);
 }
 
 .card a:hover,
@@ -159,15 +153,15 @@ main h1{
     display: flex;
     margin: .5rem auto;
     width: 100%;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--primary-color);
+    color: var(--background-color);
 }
 
 .listHeaderContainer button {
     width: 100%;
     outline: none;
     border: none;
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
     color: var(--text-color);
     padding: 1rem;
 }

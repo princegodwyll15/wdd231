@@ -45,6 +45,7 @@ function displayMembersCard(members) {
 
         const memeberImage = document.createElement('img');
         memeberImage.src = member.image;
+        memeberImage.loading = "lazy"
         memeberImage.alt = `${member.name} logo`;
         memeberImage.width = 100;
         memeberImage.height = 100;
@@ -103,6 +104,7 @@ function displayMembersList(members) {
 
         const memeberImage = document.createElement('img');
         memeberImage.src = member.image;
+        memeberImage.loading = "lazy"
         memeberImage.alt = `${member.name} logo`;
         memeberImage.width = 50;
         memeberImage.height = 50;
