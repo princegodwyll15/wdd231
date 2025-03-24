@@ -1,6 +1,6 @@
 const url = "./data/members.json";
 
-let currentView = 'list'; // Default view
+let currentView; // Default view
 
 async function getMembers() {
     const response = await fetch(url);
@@ -122,5 +122,19 @@ function displayMembersList(members) {
 document.addEventListener('DOMContentLoaded', ()=>{
     currentView = 'card';
     getMembers();
-})
+});
+
+
+const gettoggleList = document.getElementById('toggleList');
+const gettoggleCard = document.getElementById('toggleCard');
+
+gettoggleList.addEventListener('click', ()=>{
+    currentView = "list"
+    getMembers();
+});
+
+gettoggleCard.addEventListener('click', ()=>{
+    currentView = "card"
+    getMembers();
+});
 

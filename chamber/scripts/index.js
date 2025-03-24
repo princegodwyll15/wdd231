@@ -48,26 +48,19 @@ function displayWeatherResults(data) {
     captionDesc.textContent = desc.charAt(0).toUpperCase() + desc.slice(1); // Capitalize first letter
 }
 
-// Function to display 3-day weather forecast
 function displayForecast(data) {
-    const forecastDays = {}; // Object to store daily forecasts
+    const forecastDays = {}; 
 
-    // Loop through the forecast list and extract daily data
     data.list.forEach((item) => {
-        const date = new Date(item.dt_txt).toDateString(); // Get the date as a string
+        const date = new Date(item.dt_txt).toDateString(); 
         if (!forecastDays[date]) {
-            // If the date is not already added, add it
             forecastDays[date] = item;
         }
     });
 
-    // Get the first three days from the forecastDays object
     const forecastKeys = Object.keys(forecastDays).slice(0, 3);
-
-    // Clear the forecast container
     forecastContainer.innerHTML = '';
 
-    // Loop through the first three days and display the forecast
     forecastKeys.forEach((key) => {
         const forecast = forecastDays[key];
         const forecastCard = document.createElement('div');
@@ -86,18 +79,14 @@ function displayForecast(data) {
         const desc = document.createElement('p');
         desc.textContent = forecast.weather[0].description.charAt(0).toUpperCase() + forecast.weather[0].description.slice(1);
 
-        // Append elements to the forecast card
         forecastCard.appendChild(date);
         forecastCard.appendChild(icon);
         forecastCard.appendChild(temp);
         forecastCard.appendChild(desc);
 
-        // Append the forecast card to the container
         forecastContainer.appendChild(forecastCard);
     });
 }
-
-// Call the functions to fetch and display weather data
 getWeather();
 getForecast();
 
@@ -118,27 +107,22 @@ async function creatSpotlight() {
   }
 }
 
-
-// Function to shuffle an array
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
   }
 
 
 function spotlightTemplate() {
-    // Select the spotlight container
     const spotlightContainer = document.querySelector('.spotlight');
     if (!spotlightContainer) {
         console.error("Spotlight container not found in the DOM.");
         return;
     }
-
-    // Add a heading to the spotlight section at the top
+    
     const spotlightBusinessesHead = document.createElement("h2");
     spotlightBusinessesHead.textContent = "Spotlight Businesses";
     spotlightContainer.insertBefore(spotlightBusinessesHead, spotlightContainer.firstChild);
 
-    // Select the spotlight container for cards
     const spotlightBusinesses = document.querySelector(".spotlight-container");
     if (!spotlightBusinesses) {
         console.error("Spotlight container for cards not found in the DOM.");
