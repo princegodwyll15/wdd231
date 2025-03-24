@@ -119,13 +119,13 @@
     height: 50vh;
 }
 
-.hero-content{
+.hero-content, .main-home h1{
     color: var(--text-color);
     padding: .5rem 1rem 0 2.5rem;
 }
 
 .hero-content p{
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .hero-content p> span{
