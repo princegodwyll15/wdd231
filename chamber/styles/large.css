@@ -108,8 +108,6 @@
     background-color: var(--background-color);
     justify-content: space-between;
     align-items: center;
-    /* border-radius: 10px; Adds a subtle rounded corner */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .hero-img{
@@ -123,7 +121,7 @@
 
 .hero-content{
     color: var(--text-color);
-    padding: .5rem;
+    padding: .5rem 1rem 0 2.5rem;
 }
 
 .hero-content p{
@@ -142,12 +140,12 @@
     border: none;
     outline: none;
     padding: .5rem;
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .hero-content a:hover {
-    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds an inset shadow effect */
-    transform: scale(1.05); /* Slightly enlarges the button for a dynamic effect */
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
 }
 
 
@@ -160,11 +158,12 @@
     width: 100%;
 }
 .events h2{
-    padding: 1rem 1rem 0 1rem;
+    padding: .5rem 1rem 0 2.5rem;
 }
 
 
 .events-container {    
+    width: 95%;
     gap:10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible columns */
@@ -174,12 +173,9 @@
 .events-card{
     border-radius: 10px;
     padding: 1rem;
+    margin-bottom: 20px;
     background-color: var(--primary-color);
     width: auto;
-}
-
-.events-card:last-child{
-    margin-bottom: 20px;
 }
 
 .events-card a{
@@ -190,11 +186,19 @@
     padding: .5rem;
 }
 
+.weather-container{
+    width: 95%;
+    margin: auto;
+}
+
 .weather{
     background-color: var(--background-color);
     color: var(--text-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: .5rem;
+}
+.weather h2{
+    padding: .5rem 1rem 0 2.5rem;
 }
 
 .spotlight{
@@ -205,24 +209,32 @@
 }
 
 .spotlight > h2{
-   padding: 1rem 1rem 0 1rem;
+   padding: .5rem 1rem 0 2.5rem;
 }
 
 .spotlight-container{
     padding: 1rem;
-    width: 98%;
+    width: 95%;
     justify-content: space-between;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible columns */
-    gap: 20px; /* Add spacing between grid items */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
     margin: auto;
 }
 
 .spotlightCard{
+    padding: 1rem;
     border-radius: 10px;
     background-color: var(--primary-color);
     height: auto;
+}
+
+.spotlightCard a{
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: .5rem;
 }
 .weather-container{
     margin-top: 2rem;
