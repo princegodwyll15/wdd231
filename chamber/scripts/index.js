@@ -154,6 +154,15 @@ function spotlightTemplate() {
         const memberName = document.createElement("h2");
         memberName.textContent = business.name;
         spotlightCard.appendChild(memberName);
+        
+        const memberImage = document.createElement("img");
+        memberImage.src = business.image;
+        memberImage.loading = "lazy";
+        memberImage.alt = `${business.name} logo`;
+        memberImage.width = 100;
+        memberImage.height = 100;
+        spotlightCard.appendChild(memberImage);
+
 
         // Create and append business address
         const memberAddress = document.createElement("p");
@@ -173,13 +182,6 @@ function spotlightTemplate() {
         spotlightCard.appendChild(memberWebsite);
 
         // Create and append business image
-        const memberImage = document.createElement("img");
-        memberImage.src = business.image;
-        memberImage.loading = "lazy";
-        memberImage.alt = `${business.name} logo`;
-        memberImage.width = 100;
-        memberImage.height = 100;
-        spotlightCard.appendChild(memberImage);
 
         // Create and append membership level
         const membershipLevel = document.createElement("p");
