@@ -1,8 +1,3 @@
-const toggleList = document.querySelector("#toggleList");
-const toggleCard = document.querySelector("#toggleCard");
-const hamburger = document.querySelector("#hamburger");
-const navMenu = document.querySelector("#nav-menu");
-
 const url = "./data/members.json";
 
 let currentView = 'list'; // Default view
@@ -129,28 +124,3 @@ document.addEventListener('DOMContentLoaded', ()=>{
     getMembers();
 })
 
-toggleList.addEventListener('click', () => {
-    currentView = 'list';
-    getMembers();
-});
-
-toggleCard.addEventListener('click', () => {
-    currentView = 'card';
-    getMembers();
-});
-
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
-
-getMembers();
-
-const getYear = document.querySelector('#year');
-const getlastModified = document.querySelector("#lastModified");
-
-const getCurrentYear = new Date().getFullYear();
-getYear.textContent = `© all rights reserved ${getCurrentYear}.`;
-
-const lastModifiedDate = new Date(document.lastModified);
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
-getlastModified.textContent = `Last modified: ${lastModifiedDate.toLocaleDateString('en-US', options)}`;

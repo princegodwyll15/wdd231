@@ -1,0 +1,164 @@
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+
+    .head-container span{
+        font-size: 18px;
+    }
+    
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .hero-content p{
+        font-size: 20px;
+    }
+    
+    .hero-content a {
+        font-size: 14px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-color);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+    nav ul li a {
+        width: 100%;
+        display: block;
+    }
+
+    .listHeaderContainer button {
+        width: 17%;
+        font-size: 12px;
+    }
+
+    .list h2,
+    .list p,
+    .list a {
+        font-size: 12px;
+        margin: .5rem;
+        text-align: left;
+    }
+
+    .spotlight-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px; /* Adjust spacing for smaller screens */
+    }
+
+    .spotlightCard {
+        width: 100%; /* Full width for cards */
+        margin: 0 auto; /* Center the cards */
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+
+
+/* For tablets (768px and below) */
+@media (max-width: 900px) {
+
+    header h1 {
+        font-size: 16px;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-color);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+    nav ul li a {
+        width: 100%;
+        display: block;
+    }
+
+    .listHeaderContainer button {
+        width: 17%;
+        font-size: 12px;
+    }
+
+    .list h2,
+    .list p,
+    .list a {
+        font-size: 12px;
+        margin: .5rem;
+        text-align: left;
+    }
+    .spotlight-container, .events-container{
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px; /* Adjust spacing for smaller screens */
+    }
+
+    .spotlight-container, .events-container{
+        width: 100%; /* Full width for cards */
+        margin: 0 auto; /* Center the cards */
+    }
+    
+
+    footer {
+        font-size: 14px;
+    }
+}
+
