@@ -1,32 +1,32 @@
 /* For tablets (900px and below) */
 @media (max-width: 900px) {
 
-    .head-container span {
+  .head-container span {
       font-size: 15px;
-    }
-  
-    .hamburger {
+  }
+
+  .hamburger {
       display: block;
       background: none;
       border: none;
       color: var(--text-color);
       font-size: 24px;
       cursor: pointer;
-    }
-  
-    .hero-content p {
+  }
+
+  .hero-content p {
       font-size: 20px;
-    }
-  
-    .hero-content > span {
+  }
+
+  .hero-content > span {
       font-size: 10px;
-    }
-  
-    .hero-content a {
+  }
+
+  .hero-content a {
       font-size: 12px;
-    }
-  
-    nav {
+  }
+
+  nav {
       display: none;
       flex-direction: column;
       align-items: center;
@@ -34,53 +34,53 @@
       position: absolute;
       top: 60px;
       left: 0;
-      width: 100%;
+      width: 100%; /* Ensure nav takes full width */
       z-index: 1000;
-    }
-  
-    nav.active {
+  }
+
+  nav.active {
       display: flex;
-    }
-  
-    nav ul {
-      width: 100%;
+  }
+
+  nav ul {
+      width: 100%; /* Ensure ul takes full width */
       padding: 0;
       margin: 0;
-    }
-  
-    nav ul li {
-      width: 100%;
+  }
+
+  nav ul li {
+      width: 100%; /* Ensure li takes full width */
       text-align: center;
       border-bottom: 1px solid var(--secondary-color);
-    }
-  
-    nav ul li a {
-      width: 100%;
+  }
+
+  nav ul li a {
+      width: 100%; /* Ensure links take full width */
       display: block;
-    }
-  
-    .listHeaderContainer button {
-      width: 17%;
+  }
+
+  .listHeaderContainer button {
+      width: 100%; /* Ensure button takes full width */
       font-size: 12px;
-    }
-  
-    .list h2,
-    .list p,
-    .list a {
+  }
+
+  .list h2,
+  .list p,
+  .list a {
       font-size: 12px;
       margin: 0.5rem;
       text-align: left;
-    }
-  
-    .events-container,
-    .spotlight-container {
-      grid-template-columns: 1fr;
-      gap: 15px;
-      width: 90%;
-      margin: 0 auto;
-    }
-  
-    footer {
-      font-size: 14px;
-    }
   }
+
+  .events-container,
+  .spotlight-container {
+      grid-template-columns: 1fr; /* Single column layout */
+      gap: 15px;
+      width: 100%; /* Ensure container takes full width */
+      margin: 0 auto; /* Center the container */
+  }
+
+  footer {
+      font-size: 14px;
+  }
+}
