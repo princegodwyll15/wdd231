@@ -1,7 +1,9 @@
 /* For tablets (900px and below) */
 @media (max-width: 900px) {
 p, h2, h3,h4,h5{
-    font-size: 12px;
+    font-size: 14px;
+    padding: .5rem;
+    margin: .5rem;
 }
   .head-container span {
       font-size: 15px;
@@ -22,7 +24,7 @@ p, h2, h3,h4,h5{
 }
 
 .hero-content h1 {
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .hero-content p {
@@ -44,6 +46,9 @@ p, h2, h3,h4,h5{
       z-index: 1000;
   }
 
+  .main-home h1{
+    font-size: 16px;
+  }
   nav.active {
       display: flex;
   }
@@ -88,6 +93,23 @@ p, h2, h3,h4,h5{
   .weather, .forecast-container, .forecast-card h3{
     font-size: 13px;
   }
+
+  .events-card h3,.events-card p,.events-card a{
+    font-size: 12px;
+    margin: 0;
+}
+.events-card a{
+    font-size: 12px;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.spotlightCard a{
+    font-size: 13px;
+    margin: .5rem;
+    padding: .5rem;
+}
+
 
   footer {
       font-size: 14px;
