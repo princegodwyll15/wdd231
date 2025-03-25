@@ -20,21 +20,17 @@
     height: 30vh;
 }
 
-  .hero-content p {
-      font-size: 17px;
-  }
+.hero-content h1 {
+    font-size: 1rem;
+}
 
-  .hero img{
-    width: 150px;
-  }
-  .hero-content > span {
-      font-size: 10px;
-  }
+.hero-content p {
+    font-size: .7rem;
+}
 
-  .hero-content a {
-      font-size: 12px;
-  }
-
+.hero-content a{
+    font-size: .9rem;
+}
   nav {
       display: none;
       flex-direction: column;
@@ -43,7 +39,7 @@
       position: absolute;
       top: 60px;
       left: 0;
-      width: 100%; /* Ensure nav takes full width */
+      width: 100%; 
       z-index: 1000;
   }
 
@@ -52,24 +48,24 @@
   }
 
   nav ul {
-      width: 100%; /* Ensure ul takes full width */
+      width: 100%;
       padding: 0;
       margin: 0;
   }
 
   nav ul li {
-      width: 100%; /* Ensure li takes full width */
+      width: 100%; 
       text-align: center;
       border-bottom: 1px solid var(--secondary-color);
   }
 
   nav ul li a {
-      width: 100%; /* Ensure links take full width */
+      width: 100%; 
       display: block;
   }
 
   .listHeaderContainer button {
-      width: 100%; /* Ensure button takes full width */
+      width: 100%; 
       font-size: 12px;
   }
 
@@ -83,10 +79,10 @@
 
   .events-container,
   .spotlight-container {
-      grid-template-columns: 1fr; /* Single column layout */
+      grid-template-columns: 1fr; 
       gap: 15px;
-      width: 100%; /* Ensure container takes full width */
-      margin: 0 auto; /* Center the container */
+      width: 100%; 
+      margin: 0 auto; 
   }
 
   .weather, .forecast-container, .forecast-card h3{
