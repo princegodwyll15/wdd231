@@ -7,7 +7,7 @@
 
 /* Directory */
 .directory {
-    padding: 0; /* Removed unnecessary padding */
+    padding: 0; 
 }
 
 /* Card View Styles */
@@ -101,19 +101,15 @@
     align-items: center;
     text-align: center;
     height: 60vh; 
+    width: 100%;
     background-image: url('../images/hero.png'); 
     background-size: contain; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-color: var(--primary-color); 
-    padding: 2rem;
-    opacity: .2;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     color: var(--text-color);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
     color: var(--background-color); 
-    padding: 1rem;
 }
 
 .hero-content {
@@ -122,13 +118,11 @@
 
 .hero-content h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
 }
 
 .hero-content p {
     color: var(--background-color);
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
 }
 
 .cta-button {
@@ -150,7 +144,6 @@
 
 /* Events Section */
 .events {
-    margin: .5rem 0; 
     color: var(--text-color);
     background-color: var(--background-color);
     width: 100%;
@@ -158,7 +151,6 @@
 
 .events h2 {
     padding: 1rem .5rem;
-    width: 95%;
     margin: 0 auto;
     background-color: var(--background-color);
     color: var(--text-color); 
@@ -173,7 +165,6 @@
 }
 
 .wrapper {
-    width: 85%;
     padding: 1rem;
     position: relative;
     height: 250px;
@@ -186,7 +177,6 @@
 .wrapper img {
     float: left;
     width: 150px;
-    margin: 0.5rem;
 }
 
 .events-card {
@@ -215,7 +205,6 @@
     background-color: var(--background-color);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px; /* Added spacing between spotlight cards */
     margin: 0 auto;
 }
 .spotlightWrapper{
@@ -231,7 +220,7 @@
     position: relative;
     margin: 0.5rem auto;
     padding: 0.5rem;
-    width: 85%;
+    width: 94%;
     border-radius: 10px;
     box-shadow: 0 2px 30px rgba(58, 145, 15, 0.1);
     background-color: var(--background-color);
@@ -240,10 +229,11 @@
 .spotlightCard img{
     float: left;
 }
+
+
 /* Weather Section */
 .weather {
     font-size: 16px;
-    border-radius: 10px;
     background-color: var(--primary-color);
     color: var(--background-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
