@@ -14,10 +14,19 @@
       cursor: pointer;
   }
 
+  .hero {
+    display: flex;
+    width: 98%;
+    height: 50vh;
+}
+
   .hero-content p {
-      font-size: 20px;
+      font-size: 17px;
   }
 
+  .hero img{
+    width: 300px;
+  }
   .hero-content > span {
       font-size: 10px;
   }
