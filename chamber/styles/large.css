@@ -193,12 +193,16 @@
 .events-card a {
     text-decoration: none;
     width: auto;
-    border-radius: 10px;
+    border-radius: 2px;
     background-color: var(--text-color);
     color: var(--background-color);
     text-align: center;
     margin: 1rem;
     padding: 0.5rem;
+}
+
+.events-content{
+    width: 90%;
 }
 
 
@@ -210,10 +214,6 @@
     background-color: var(--text-color);
 }
 
-.spotlight h2{
-    padding: 1rem;
-    margin-left: 1rem;
-}
 
 .spotlight-container {
     background-color: var(--background-color);
@@ -226,6 +226,10 @@
     background-color: var(--background-color);
 }
 
+.spotlightWrapper h2{
+    padding: 1rem;
+    margin: 1rem;
+}
 
 .spotlightCard {
     position: relative;
@@ -237,6 +241,7 @@
     box-shadow: 0 2px 30px rgba(58, 145, 15, 0.1);
     background-color: var(--background-color);
 }
+
 
 .spotlightCard img{
     float: right;

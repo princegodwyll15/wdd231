@@ -1,6 +1,8 @@
 /* For tablets (900px and below) */
 @media (max-width: 900px) {
-
+p, h2, h3,h4,h5{
+    font-size: 12px;
+}
   .head-container span {
       font-size: 15px;
   }

@@ -133,7 +133,7 @@ function spotlightTemplate() {
         spotlightCard.className = "spotlightCard";
 
         // Create and append business name
-        const memberName = document.createElement("h2");
+        const memberName = document.createElement("h3");
         memberName.textContent = business.name;
         spotlightCard.appendChild(memberName);
         
