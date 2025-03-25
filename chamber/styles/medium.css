@@ -1,13 +1,10 @@
 /* For tablets (900px and below) */
 @media (max-width: 900px) {
 p, h2, h3,h4,h5{
-    font-size: 14px;
+    font-size: 17px;
     padding: .5rem;
     margin: .5rem;
 }
-  .head-container span {
-      font-size: 15px;
-  }
 
   .hamburger {
       display: block;
@@ -35,19 +32,20 @@ p, h2, h3,h4,h5{
     font-size: .9rem;
 }
   nav {
+    width: 95%;
       display: none;
       flex-direction: column;
       align-items: center;
       background-color: var(--background-color);
       position: absolute;
       top: 60px;
+      margin: 0 auto;
       left: 0;
-      width: 100%; 
       z-index: 1000;
   }
 
   .main-home h1{
-    font-size: 16px;
+    font-size: 18px;
   }
   nav.active {
       display: flex;
@@ -72,13 +70,13 @@ p, h2, h3,h4,h5{
 
   .listHeaderContainer button {
       width: 100%; 
-      font-size: 12px;
+      font-size: 16px;
   }
 
   .list > h2,
   .list > p,
   .list > a {
-      font-size: 12px;
+      font-size: 16px;
       margin: 0.5rem;
       text-align: left;
   }
@@ -91,27 +89,31 @@ p, h2, h3,h4,h5{
   }
 
   .weather, .forecast-container, .forecast-card h3{
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .events-card h3,.events-card p,.events-card a{
-    font-size: 12px;
+    font-size: 16px;
     margin: 0;
 }
 .events-card a{
-    font-size: 12px;
+    font-size: 16px;
     margin: .5rem;
     padding: .5rem;
 }
+.events-content{
+    width: 50%;
+}
+
 
 .spotlightCard a{
-    font-size: 13px;
+    font-size: 16px;
     margin: .5rem;
     padding: .5rem;
 }
 
 
   footer {
-      font-size: 14px;
+      font-size: 15px;
   }
 }

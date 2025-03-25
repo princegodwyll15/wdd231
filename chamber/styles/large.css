@@ -165,10 +165,9 @@
 }
 
 .wrapper {
-    padding: .5rem;
     position: relative;
     height: 250px;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -202,7 +201,7 @@
 }
 
 .events-content{
-    width: 50%;
+    width: 90%;
 }
 
 
