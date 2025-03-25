@@ -1,10 +1,9 @@
 /* For tablets (900px and below) */
 @media (max-width: 900px) {
-p, h2, h3,h4,h5{
-    font-size: 17px;
-    padding: .5rem;
-    margin: .5rem;
-}
+
+  .head-container span {
+      font-size: 15px;
+  }
 
   .hamburger {
       display: block;
@@ -17,36 +16,37 @@ p, h2, h3,h4,h5{
 
   .hero {
     display: flex;
-    height: 30vh;
+    width: 100%;
+    height: 50vh;
 }
 
-.hero-content h1 {
-    font-size: .8rem;
-}
+  .hero-content p {
+      font-size: 17px;
+  }
 
-.hero-content p {
-    font-size: .7rem;
-}
+  .hero img{
+    width: 300px;
+  }
+  .hero-content > span {
+      font-size: 10px;
+  }
 
-.hero-content a{
-    font-size: .9rem;
-}
+  .hero-content a {
+      font-size: 12px;
+  }
+
   nav {
-    width: 95%;
       display: none;
       flex-direction: column;
       align-items: center;
       background-color: var(--background-color);
       position: absolute;
-      top: 60px;
-      margin: 0 auto;
+      top: 80px;
       left: 0;
+      width: 98%; 
       z-index: 1000;
   }
 
-  .main-home h1{
-    font-size: 18px;
-  }
   nav.active {
       display: flex;
   }
@@ -64,56 +64,35 @@ p, h2, h3,h4,h5{
   }
 
   nav ul li a {
-      width: 100%; 
+      width: 100%;
       display: block;
   }
 
   .listHeaderContainer button {
       width: 100%; 
-      font-size: 16px;
+      font-size: 12px;
   }
 
-  .list > h2,
-  .list > p,
-  .list > a {
-      font-size: 16px;
+  .list h2,
+  .list p,
+  .list a {
+      font-size: 14px;
       margin: 0.5rem;
       text-align: left;
   }
 
-  .events-container,
+  .event-container, .weather-container, .forecast-container {
+    grid-template-columns: 1fr;
+  }
+
   .spotlight-container {
       grid-template-columns: 1fr; 
       gap: 15px;
-      width: 100%; 
+      width: 100%;
+      margin: 0 auto; 
   }
-
-  .weather, .forecast-container, .forecast-card h3{
-    font-size: 16px;
-  }
-
-  .events-card h3,.events-card p,.events-card a{
-    font-size: 16px;
-    margin: 0;
-}
-.events-card a{
-    font-size: 16px;
-    margin: .5rem;
-    padding: .5rem;
-}
-.events-content{
-    width: 50%;
-}
-
-
-.spotlightCard a{
-    font-size: 16px;
-    margin: .5rem;
-    padding: .5rem;
-}
-
 
   footer {
-      font-size: 15px;
+      font-size: 14px;
   }
 }
