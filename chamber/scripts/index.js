@@ -119,10 +119,6 @@ function spotlightTemplate() {
         return;
     }
     
-    const spotlightBusinessesHead = document.createElement("h2");
-    spotlightBusinessesHead.textContent = "Spotlight Businesses";
-    spotlightContainer.insertBefore(spotlightBusinessesHead, spotlightContainer.firstChild);
-
     const spotlightBusinesses = document.querySelector(".spotlight-container");
     if (!spotlightBusinesses) {
         console.error("Spotlight container for cards not found in the DOM.");
@@ -131,6 +127,8 @@ function spotlightTemplate() {
 
     // Loop through business data and create spotlight cards
     businessData.forEach((business) => {
+        const spotlightWrapper = document.createElement('div');
+        spotlightWrapper.className = "spotlightWrapper";
         const spotlightCard = document.createElement("div");
         spotlightCard.className = "spotlightCard";
 
@@ -173,6 +171,7 @@ function spotlightTemplate() {
         spotlightCard.appendChild(membershipLevel);
 
         // Append the spotlight card to the container
+        spotlightWrapper.appendChild(spotlightCard);
         spotlightBusinesses.appendChild(spotlightCard);
     });
 }

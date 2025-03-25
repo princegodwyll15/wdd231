@@ -48,12 +48,15 @@
           <span> ☰</span>
       </button>
   </header>
+
+
     <main class="main-home">
       <h1>Gp Town Home Page</h1>
+
       <section class="home hero" id="home-content">
         <div class="hero-content">
           <p>
-            Welcome to <br> GP-town <br>
+            Welcome to GP-town <br>
             <span>Chamber of Commerce</span>
           </p>
           <a href="">Join Us</a>
@@ -62,35 +65,52 @@
           <img src="images/hero.png" alt="">
         </div>
       </section>
-
+      
       <section class="events" id="current-events">
-        <h2>GP-town Events</h2>
-        <div class="events-container">
+        <div class="events-wrapper">
+          <h2>GP-town Events</h2>
+          <!-- Event 1 -->
+          <div class="events-container">
           <div class="events-card">
-            <h3>Monthly Business Mixer</h3>
-            <p>Date: April 15, 2025</p>
-            <p>Location: GP-town Community Hall</p>
-            <a href="#">Learn More</a>
+            <div class="wrapper">
+              <img src="images/events1.avif" alt="Networking Event">
+              <h3>Charity Fundraiser</h3>
+              <span>Date: May 15, 2025</span><br>
+              <span>Location: GP-town Central Park</span><br><br>
+              <a href="#">Read More</a>
+            </div>
           </div>
+      
+          <!-- Event 2 -->
           <div class="events-card">
-            <h3>Annual GP-town Festival</h3>
-            <p>Date: June 20-22, 2025</p>
-            <p>Location: GP-town Central Park</p>
-            <a href="#">Join the Fun</a>
+            <div class="wrapper">
+              <img src="images/events2.avif" alt="Workshop">
+              <h3>Small Business Workshop</h3>
+              <span>Date: May 5, 2025</span><br>
+              <span>Location: GP-town Community Hall</span><br><br>
+              <a href="#">Learn More</a>
+            </div>
           </div>
+      
+          <!-- Event 3 -->
           <div class="events-card">
-            <h3>Digital Marketing Workshop</h3>
-            <p>Date: May 10, 2025</p>
-            <p>Location: GP-town Chamber Office</p>
-            <a href="#">Register Now</a>
+            <div class="wrapper">
+              <img src="images/events3.jpg" alt="networking-event">
+              <h3>Networking Night</h3>
+              <span>Date: April 20, 2025</span><br>
+              <span>Location: GP-town Business Center</span><br><br>
+              <a href="#">Register Now</a>
+            </div>
+          </div>
           </div>
         </div>
       </section>
+
       <section class="weather">
         <h2>Weather Condition</h2>
         <div class="weather-container">
-          <div class="weather">
-            <h5>Todays weather</h5>
+          <div class="current-weather">
+            <h2>Todays weather</h2>
             <p id="current-temp"></p>
             <img id="weather-icon" src="weather" alt="Weather icon">
             <p class="figcaption"></p>
@@ -102,7 +122,13 @@
       </section>
 
       <section class="spotlight">
-        <div class="spotlight-container"></div>
+        <div class="spotlightWrapper">
+          <h2>Spotlight Business</h2>
+          <div class="spotlight-container">
+            
+          </div>
+
+        </div>
       </section>
     </main>
 

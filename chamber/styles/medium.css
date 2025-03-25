@@ -17,7 +17,7 @@
   .hero {
     display: flex;
     width: 98%;
-    height: 50vh;
+    height: 30vh;
 }
 
   .hero-content p {
@@ -25,7 +25,7 @@
   }
 
   .hero img{
-    width: 300px;
+    width: 150px;
   }
   .hero-content > span {
       font-size: 10px;
@@ -87,6 +87,10 @@
       gap: 15px;
       width: 100%; /* Ensure container takes full width */
       margin: 0 auto; /* Center the container */
+  }
+
+  .weather, .forecast-container, .forecast-card h3{
+    font-size: 13px;
   }
 
   footer {

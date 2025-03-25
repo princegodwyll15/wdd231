@@ -83,26 +83,25 @@
 
 /* Home Styling */
 .main-home {
-    margin: 0; /* Removed unnecessary margin */
-    padding: 0; /* Removed unnecessary padding */
+    padding: 0;
     width: 100%;
-    background-color: var(--background-color);
 }
 
 .main-home h1 {
+    padding: 1rem;
     font-size: 25px;
     font-weight: 400;
-    padding: 1rem;
-    color: var(--text-color);
+    color: var(--background-color);
 }
 
 /* Hero Section */
 .hero {
     display: flex;
     width: 98%;
+    color: var(--background-color);
     height: 50vh;
     margin: 0 auto;
-    background-color: var(--background-color);
+    background-color: var(--text-color);
     justify-content: space-between;
     align-items: center;
 }
@@ -112,13 +111,12 @@
 }
 
 .hero-img > img {
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
     height: auto;
 }
 
 .hero-content {
-    color: var(--text-color);
     padding: 0.5rem;
 }
 
@@ -131,9 +129,8 @@
 }
 
 .hero-content a {
-    border-radius: 10px;
-    background-color: var(--primary-color);
-    color: var(--background-color);
+    color: var(--primary-color);
+    background-color: var(--background-color);
     text-decoration: none;
     border: none;
     outline: none;
@@ -149,70 +146,115 @@
 
 /* Events Section */
 .events {
-    color: var(--background-color);
-    background-color: var(--text-color);
+    margin: .5rem 0; /* Added spacing between sections */
+    color: var(--text-color);
+    background-color: var(--background-color);
     width: 100%;
 }
 
 .events h2 {
-    padding: 0.5rem 1rem 0; /* Adjusted padding */
+    padding: 1rem .5rem;
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    color: var(--text-color); /* Adjusted padding */
 }
 
+.events-wrapper{
+    color: var(--text-color);
+}
 .events-container {
-    gap: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin: 0 auto; /* Center the container */
+}
+
+.wrapper {
+    width: 85%;
+    padding: 1rem;
+    position: relative;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 30px rgba(58, 145, 15, 0.1);
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.wrapper img {
+    float: left;
+    width: 150px;
+    margin: 0.5rem;
 }
 
 .events-card {
-    border-radius: 10px;
-    padding: 1rem;
-    background-color: var(--primary-color);
+    height: 280px;
 }
 
 .events-card a {
     text-decoration: none;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    width: auto;
+    background-color: var(--text-color);
+    color: var(--background-color);
     text-align: center;
     padding: 0.5rem;
 }
 
-/* Weather Section */
-.weather {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
-}
 
 /* Spotlight Section */
 .spotlight {
+    margin-top: -20px;
     width: 100%;
     color: var(--background-color);
     background-color: var(--text-color);
 }
 
-.spotlight > h2 {
-    padding: 0.5rem 1rem 0; /* Adjusted padding */
-}
-
 .spotlight-container {
+    background-color: var(--background-color);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; /* Added spacing between spotlight cards */
+    margin: 0 auto;
+}
+.spotlightWrapper{
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.spotlightWrapper h2{
+    padding: 1rem;
 }
 
 .spotlightCard {
-    margin: .5rem;
-    padding: .5rem;
+    position: relative;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 2px 30px rgba(58, 145, 15, 0.1);
+    background-color: var(--background-color);
+}
+
+.spotlightCard img{
+    float: left;
+}
+/* Weather Section */
+.weather {
+    font-size: 16px;
     border-radius: 10px;
     background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
 }
+
+.weather > h2{
+    padding-left: 1rem;
+}
+
 
 /* Weather Container */
 .weather-container {
-    margin-top: 2rem;
+    width: 97%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -227,7 +269,8 @@
 }
 
 .forecast-card {
-    color: var(--text-color);
+    background-color: var(--primary-color);
+    color: var(--background-color);
     border-radius: 8px;
     padding: 10px;
     text-align: center;
@@ -242,11 +285,11 @@
 }
 
 .forecast-card h3 {
-    font-size: 13px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
 .forecast-card p {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 5px 0;
 }
