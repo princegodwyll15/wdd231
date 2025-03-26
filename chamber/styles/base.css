@@ -12,7 +12,9 @@ html {
 }
 
 body{
-  width: 100%;
+  background-color: var(--primary-color);
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* Section Transition Effect */

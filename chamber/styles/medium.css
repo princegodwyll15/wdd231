@@ -46,9 +46,9 @@
       align-items: center;
       background-color: var(--background-color);
       position: absolute;
+      width: 90%;
       top: 80px;
-      left: 0;
-      width: 98%; 
+      margin: 0 auto;
       z-index: 1000;
   }
 

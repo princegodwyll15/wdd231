@@ -88,7 +88,7 @@
 }
 
 .main-home h1 {
-    padding: 1rem;
+    /* padding: 1rem; */
     font-size: 25px;
     font-weight: 400;
     color: var(--background-color);
@@ -210,10 +210,7 @@
 
 /* Spotlight Section */
 .spotlight {
-    margin-top: -20px;
-    width: 100%;
-    color: var(--background-color);
-    background-color: var(--text-color);
+    width: auto;
 }
 
 .spotlight h2{
@@ -229,6 +226,9 @@
     margin: 0 auto;
 }
 .spotlightWrapper{
+  max-width: 1200px;
+  border-radius: 20px 20px 20px 20px;
+  margin: 2rem auto;
     color: var(--text-color);
     background-color: var(--background-color);
 }
@@ -261,50 +261,47 @@ section.weather {
   .weather-container {
     display: grid;
     border-radius: 20px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.2); 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
     justify-content: center; 
+  }
+
+  .current-weather{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .current-weather h2, .current-weather p, .weatherCard{
+    font-size: 16px;
   }
   
   .weatherCard {
     background-color: #ffffff;
-    border: 1px solid #ddd;
+    border-bottom: 1px solid var(--background-color);
     border-radius: 8px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
-    text-align: center;
-    padding: 2rem;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); 
   }
   
   .weatherCard img {
-    width: 100px;
+    width: 200px;
     height: auto;
-    margin: 1rem 0;
   }
   
-  .weatherCard h3 {
-    font-size: 1.5rem;
-    color: var(--background-color);
-    margin-bottom: 1rem;
-  }
   
-  .weatherCard p {
-    font-size: 1rem;
-    color: var(--background-color);
-    margin: 0.5rem 0;
-  }
   
   .forecast-container {
-    padding: 1rem;
     display: grid;
+    text-align: center;
+    font-size: 16px;
     border-radius: 20px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); 
     color: var(--background-color);
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    align-items: center;
     gap: 1rem;
-    justify-content: center; 
   }
