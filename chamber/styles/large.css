@@ -90,6 +90,7 @@
 .main-home h1 {
   font-size: 25px;
   font-weight: 400;
+  padding: .5rem;
   color: var(--background-color);
 }
 
@@ -205,6 +206,7 @@
   max-width: 1200px;
   background-color: var(--background-color);
   border-radius: 10px;
+  color: var(--text-color);
   margin: 2rem auto;
   box-shadow: 0 2px 30px rgba(125, 131, 195, 0.1);
 }
@@ -288,7 +290,7 @@ section.weather {
   text-align: center;
   font-size: 16px;
   border-radius: 10px;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
   color: var(--background-color);
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;

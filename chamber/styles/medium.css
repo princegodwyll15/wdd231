@@ -1,18 +1,27 @@
 /* For tablets (900px and below) */
 @media (max-width: 900px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: var(--background-color);
+        z-index: 1000;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
 
-  .head-container span {
-      font-size: 15px;
-  }
 
-  .hamburger {
-      display: block;
-      background: none;
-      border: none;
-      color: var(--text-color);
-      font-size: 24px;
-      cursor: pointer;
-  }
 
   .hero {
     display: flex;
@@ -40,38 +49,6 @@
       font-size: 12px;
   }
 
-  nav {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      background-color: var(--background-color);
-      position: absolute;
-      width: 90%;
-      top: 80px;
-      margin: 0 auto;
-      z-index: 1000;
-  }
-
-  nav.active {
-      display: flex;
-  }
-
-  nav ul {
-      width: 100%;
-      padding: 0;
-      margin: 0;
-  }
-
-  nav ul li {
-      width: 100%; 
-      text-align: center;
-      border-bottom: 1px solid var(--secondary-color);
-  }
-
-  nav ul li a {
-      width: 100%;
-      display: block;
-  }
 
   .listHeaderContainer button {
       width: 100%; 

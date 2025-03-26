@@ -1,11 +1,10 @@
 const toggleList = document.querySelector("#toggleList");
 const toggleCard = document.querySelector("#toggleCard");
-const hamburger = document.querySelector("#hamburger");
-const navMenu = document.querySelector("#nav-menu");
-
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
 
 hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+    navLinks.classList.toggle('active');
 });
 
 const getYear = document.querySelector('#year');

@@ -16,6 +16,24 @@ header {
   background-color: var(--accent-color);
 }
 
+
+dialog{
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+::backdrop{
+  background-color: #acb2b7;
+  box-shadow: 0 20px 4px rgba(0,0,0,0.5);
+}
+dialog button{
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  background-color: red;
+  color: white;
+}
 header img {
   padding: 1.5rem;
 }
