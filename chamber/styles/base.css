@@ -35,6 +35,7 @@ section.visible {
   
   /* HEADER */
   header {
+    width: 100%;
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
@@ -67,7 +68,6 @@ section.visible {
   
   nav {
     margin: 0;
-    padding: .5rem;
     display: inline-block;
   }
   
@@ -92,8 +92,6 @@ section.visible {
   
   .toggleDisplay {
     display: flex;
-    width: 100%;
-    margin-top: 0.2rem;
     justify-content: center;
     align-items: center;
   }

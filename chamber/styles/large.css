@@ -158,12 +158,12 @@
   
   .event-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     gap: 2rem;
   }
   
   .eventCard {
-    background-color: #ffffff;
+    background-color: var(--primary-color);
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -173,7 +173,7 @@
   }
   
   .eventCard img {
-    width: 50%;
+    width: 80%;
     height: 300;
     border-bottom: 1px solid #ddd;
   }
@@ -250,59 +250,61 @@
 }
 
 
-/* Weather Section */
-.weather {
+/* General styling for the weather section */
+section.weather {
+    padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    font-size: 16px;
     color: var(--background-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
-}
-
-.weather > h2{
-    padding-left: 1rem;
-}
-
-
-/* Weather Container */
-.weather-container {
-    width: 100%;
+  }
+  
+  .weather-container {
+    display: grid;
+    border-radius: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Forecast Section */
-.forecast-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.forecast-card {
-    color: var(--background-color);
+    justify-content: center; 
+  }
+  
+  .weatherCard {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 40%;
-}
-
-.forecast-card img {
-    width: 50px;
-    height: 50px;
-    margin: 10px 0;
-}
-
-.forecast-card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.forecast-card p {
-    font-size: 1.2em;
-    margin: 5px 0;
-}
+    padding: 2rem;
+  }
+  
+  .weatherCard img {
+    width: 100px;
+    height: auto;
+    margin: 1rem 0;
+  }
+  
+  .weatherCard h3 {
+    font-size: 1.5rem;
+    color: var(--background-color);
+    margin-bottom: 1rem;
+  }
+  
+  .weatherCard p {
+    font-size: 1rem;
+    color: var(--background-color);
+    margin: 0.5rem 0;
+  }
+  
+  .forecast-container {
+    padding: 1rem;
+    display: grid;
+    border-radius: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    color: var(--background-color);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: center;
+    gap: 1rem;
+    justify-content: center; 
+  }
