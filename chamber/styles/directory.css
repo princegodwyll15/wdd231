@@ -1,0 +1,117 @@
+.main-directory {
+    width: 100%;
+    font-size: 20px;
+    color: var(--background-color);
+  }
+
+  .main-directory h1{
+    font-size: 1.5rem;
+    color: var(--background-color);
+  }
+  
+  /* Directory */
+  .directory {
+    padding: 0;
+  }
+  
+
+  .toggleDisplay {
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .toggleDisplay button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 100%;
+    padding: .5rem;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    transition: ease-out 0.3s;
+  }
+  
+  .toggleDisplay button:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
+  
+  /* Card View Styles */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    background-color: var(--primary-color);
+  }
+  
+  .card img {
+    max-width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: var(--background-color);
+  }
+  
+  .card p,
+  .card a,
+  .list a {
+    font-size: .8em;
+    color: var(--background-color);
+  }
+  
+  .card a:hover,
+  .list a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* List View Styles */
+  .list-container {
+    color: var(--primary-color);
+  }
+  
+  .list,
+  .listHeaderContainer {
+    display: flex;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
+  
+  .listHeaderContainer button {
+    width: 100%;
+    outline: none;
+    font-weight: 900;
+    border: none;
+    color: var(--background-color);
+    padding: 1rem;
+  }
+
+  .lis img {
+    max-width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  
+  .list h2,
+  .list p,
+  .list a {
+    font-size: 16px;
+    text-align: center;
+    width: 16.67%;
+  }
+  

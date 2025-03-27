@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Join Page of GP-town Chamber Of Commerce"
+    />
+    <meta name="author" content="Prince Godwyll">
+    <meta property="og:title" content="GP-town Join Page">
+    <meta property="og:type" content="website">
+    <meta
+      property="og:image"
+      content="https://princegodwyll15.github.io/wdd231/chamber/images/icon.png">
+    <meta
+      property="og:url"
+      content="https://princegodwyll15.github.io/wdd231/chamber/join">
+
+    <title>GP-town join page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="icon" href="images/fav-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">GP_Town</div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join Us</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Join Us here ↓</h1>
+      <section id="membership-level">
+        <h2>Membership Levels</h2>
+        <div class="membership-level">
+            <div class="membership-types">
+              <h3>Gold Membership</h3>
+              <p>Enjoy premium benefits, exclusive networking opportunities, and top-tier support for your business.</p>
+              <a href="gold-details.html">Learn More</a>
+            </div>
+            <div class="membership-types">
+              <h3>Silver Membership</h3>
+              <p>Access valuable resources and events to help grow your business at an affordable rate.</p>
+              <a href="silver-details.html">Learn More</a>
+            </div>
+            <div class="membership-types">
+              <h3>Bronze Membership</h3>
+              <p>Get started with essential benefits and support to establish your business in the community.</p>
+              <a href="bronze-details.html">Learn More</a>
+            </div>
+            <div class="membership-types">
+              <h3>Non-Profit Membership</h3>
+              <p>Special membership designed for non-profit organizations to connect and thrive.</p>
+              <a href="nonprofit-details.html">Learn More</a>
+            </div>
+          </div>
+      </section>
+
+      <section id="form" class="form">
+        <h2>Membership Application Form</h2>
+        <form action="thankyou.html">
+          <label for="firstname">
+            Firstname:
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="Your firstname here"
+              required
+              autocomplete="on"
+              title="Please enter a valid name here">
+          </label>
+
+          <label for="lastname">
+            Lastname:
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="Your lastname here"
+              required
+              autocomplete="on"
+              title="Please enter a valid name here">
+          </label>
+
+          <label for="title">
+            Organization Title:
+            <input
+              type="text"
+              id="title"
+              name="title"
+              autocomplete="organization-title"
+              placeholder="Your organization title"
+              title="Your organization title should closely match your role">
+          </label>
+
+          <label for="email">
+            Email:
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="abcdefg@example.com"
+              required
+              autocomplete="on"
+              title="Enter a valid email address">
+          </label>
+
+          <label for="mobile">
+            Mobile Number:
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              placeholder="123-456-7890"
+              required
+              autocomplete="on"
+              title="Enter a valid phone number">
+          </label>
+
+          <label for="description">
+            Description:
+            <textarea
+              id="description"
+              rows="3"
+              cols="10"
+              name="description"
+              placeholder="Describe what your business does here"
+              required
+              title="Describe what your business does here"
+            >
+            </textarea>
+          </label>
+
+          <label for="date">
+            Date of Registration:
+            <input type="date" id="date" name="date" required>
+          </label>
+
+          <fieldset>
+            <legend>Membership Level</legend>
+            <label>
+              <input type="radio" name="membership" value="gold" required>
+              Gold
+            </label>
+            <label>
+              <input type="radio" name="membership" value="silver">
+              Silver
+            </label>
+            <label>
+              <input type="radio" name="membership" value="bronze">
+              Bronze
+            </label>
+            <label>
+              <input type="radio" name="membership" value="non-profit">
+              Non-Profit
+            </label>
+          </fieldset>
+
+          <button type="submit">Join Us</button>
+        </form>
+    </section>
+    </main>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="#directory">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+            <div class="footer-social-media">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="f" width="32" height="32"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.svg" alt="t" width="32" height="32"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.svg" alt="i" width="32" height="32"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="l" width="32" height="32"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.svg" alt="y" width="32" height="32"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="images/pinterest.svg" alt="p" width="32" height="32"></a>            
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>GP-town Chamber Of Commerce</p>
+            <p>P.O. Box01 Accra, Ghana</p>
+            <p>Adabrka Okai, Mesah Street</p>
+            <p>Email: gprince@gmail.com</p>
+            <p>Phone: +233-3333-444</p>
+        </div>
+        
+        <div class="footer-last-modified">
+          <p id="lastModified"></p>
+        </div>
+  
+        <div class="copyight">
+          <p id="year"></p>
+          <!-- dynamically generated -->
+        </div>
+      </footer>
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/base.js"></script>
+
+</body>
+</html>
+  </body>
+</html>
