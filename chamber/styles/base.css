@@ -5,7 +5,9 @@
   --text-color: #ffffff;
   --font: "Open Sans", sans-serif;
 }
-
+*{
+  font-family: var(--font);
+}
 html {
   scroll-behavior: smooth;
 }
