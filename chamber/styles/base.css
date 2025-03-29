@@ -21,16 +21,20 @@ section.visible {
   transform: translateY(0);
 }
 header{
-  border: 10px solid var(--secondary-color);
+  border: 20px solid var(--background-color);
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  left: 0;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
   padding: 15px 10px;
-  color: var(--text-color);
+  color: var(--background-color);
 }
 
 .logo {
@@ -42,7 +46,7 @@ header{
   font-size: 2.5rem;
   background: none;
   border: none;
-  color: var(--text-color);
+  color: var(--background-color);
   cursor: pointer;
   display: none;
 }
@@ -57,7 +61,7 @@ header{
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
+  color: var(--background-color);
   font-size: 1.2rem;
   padding: 0.5rem;
 }

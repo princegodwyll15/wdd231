@@ -9,7 +9,7 @@
     flex-direction: column;
     position: absolute;
     top: 60px;
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     z-index: 1000;
     left: 0;
     width: 100%;
@@ -19,6 +19,11 @@
 
   .nav-links.active {
     display: flex;
+  }
+
+  .hamburger{
+    padding: 0;
+    margin: 0;
   }
 
   .hero {
