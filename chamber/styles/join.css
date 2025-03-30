@@ -161,7 +161,7 @@ legend {
   margin: 0 auto;
 }
 
-#closeBtn{
+dialog > button{
   display: inline-block;
   background-color:red;
   text-decoration: none;
