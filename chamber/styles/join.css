@@ -144,18 +144,52 @@ legend {
   margin-bottom: 15px;
 }
 
+::backdrop {
+  background-color: rgba(217, 216, 216, 0.5); 
+  backdrop-filter: blur(10px); 
+}
+
+
+
+
+#dialogBox {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width:50%;
+  margin: 0 auto;
+}
+
+#closeBtn{
+  display: inline-block;
+  background-color:red;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .membership-types a {
   display: inline-block;
   background-color: var(--background-color);
   text-decoration: none;
   font-weight: bold;
   color: var(--text-color);
+  border: none;
+  outline: none;
   padding: 8px 12px;
+  cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.membership-types a:hover {
+.membership-types a:hover, #closeBtn:hover {
   color: var(--background-color);
   color: #fff;
 }

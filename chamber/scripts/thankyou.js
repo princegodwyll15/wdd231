@@ -31,7 +31,6 @@ function displayclientData() {
         <p><strong>Membership:</strong> ${clientInfo.membership}</p>
         <h2>Hi ${clientInfo.firstname} ${clientInfo.lastname} You have been registered successfully!</h2>
         <a href="index.html" id="goBack">go to homepage</a>
-
     `;
 }
 

@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
-      content="Join Page of GP-town Chamber Of Commerce"
-    />
+      content="Join Page of GP-town Chamber Of Commerce">
     <meta name="author" content="Prince Godwyll">
     <meta property="og:title" content="GP-town Join Page">
     <meta property="og:type" content="website">
@@ -53,28 +52,73 @@
             <div class="membership-types">
               <h3>Gold Membership</h3>
               <p>Enjoy premium benefits, exclusive networking opportunities, and top-tier support for your business.</p>
-              <a href="gold-details.html" id="openBtn">Learn More</a>
+              <a href="#gold-dialog" class="learn-more">Learn More</a>
             </div>
             <div class="membership-types">
               <h3>Silver Membership</h3>
               <p>Access valuable resources and events to help grow your business at an affordable rate.</p>
-              <a href="silver-details.html" id="openBtn">Learn More</a>
+              <a href="#silver-dialog" class="learn-more">Learn More</a>
             </div>
             <div class="membership-types">
               <h3>Bronze Membership</h3>
               <p>Get started with essential benefits and support to establish your business in the community.</p>
-              <a href="bronze-details.html" id="openBtn">Learn More</a>
+              <a href="#bronze-dialog" class="learn-more">Learn More</a>
             </div>
             <div class="membership-types">
               <h3>Non-Profit Membership</h3>
               <p>Special membership designed for non-profit organizations to connect and thrive.</p>
-              <a href="nonprofit-details.html" id="openBtn">Learn More</a>
+              <a href="#nonprofit-dialog" class="learn-more">Learn More</a>
             </div>
           </div>
-          <dialog id="dialogBox">
-            <button id="clsoeBtn"></button>
-          </dialog>
+          <!-- Gold Membership Dialog -->
+        <dialog id="gold-dialog">
+          <h2>Gold Membership Benefits</h2>
+          <p>Enjoy premium benefits, including:</p>
+          <ul>
+            <li>Exclusive networking opportunities</li>
+            <li>Top-tier support for your business</li>
+            <li>Access to valuable resources and events</li>
+          </ul>
+          <button id="close-gold-dialog">Close</button>
+        </dialog>
+
+        <!-- Silver Membership Dialog -->
+        <dialog id="silver-dialog">
+          <h2>Silver Membership Benefits</h2>
+          <p>Access valuable resources and events, including:</p>
+          <ul>
+            <li>Networking opportunities</li>
+            <li>Support for your business</li>
+            <li>Access to exclusive events</li>
+          </ul>
+          <button id="close-silver-dialog">Close</button>
+        </dialog>
+
+        <!-- Bronze Membership Dialog -->
+        <dialog id="bronze-dialog">
+          <h2>Bronze Membership Benefits</h2>
+          <p>Get started with essential benefits, including:</p>
+          <ul>
+            <li>Support for your business</li>
+            <li>Access to resources and events</li>
+            <li>Networking opportunities</li>
+          </ul>
+          <button id="close-bronze-dialog">Close</button>
+        </dialog>
+
+        <!-- Non-Profit Membership Dialog -->
+        <dialog id="nonprofit-dialog">
+          <h2>Non-Profit Membership Benefits</h2>
+          <p>Special membership designed for non-profit organizations, including:</p>
+          <ul>
+            <li>Exclusive resources and events</li>
+            <li>Support for your non-profit organization</li>
+            <li>Networking opportunities</li>
+          </ul>
+          <button id="close-nonprofit-dialog">Close</button>
+        </dialog>
       </section>
+
       <section id="form-section" class="form-section">
         <h2>Membership Application Form</h2>
         <form action="thankyou.html" method="get">
@@ -224,3 +268,6 @@
 
 </body>
 </html>
+
+
+
