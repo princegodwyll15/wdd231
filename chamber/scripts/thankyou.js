@@ -13,7 +13,7 @@ function displayclientData() {
         business: retrieveData.get('bname'),
         membership: retrieveData.get('membership'),
         description: retrieveData.get('description'),
-        date: retrieveData.get('date'),
+        date: retrieveData.get('timestamp'),
     };
 
     const thankyouContainer = document.querySelector("#thank-you");

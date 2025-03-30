@@ -53,28 +53,31 @@
             <div class="membership-types">
               <h3>Gold Membership</h3>
               <p>Enjoy premium benefits, exclusive networking opportunities, and top-tier support for your business.</p>
-              <a href="gold-details.html">Learn More</a>
+              <a href="gold-details.html" id="openBtn">Learn More</a>
             </div>
             <div class="membership-types">
               <h3>Silver Membership</h3>
               <p>Access valuable resources and events to help grow your business at an affordable rate.</p>
-              <a href="silver-details.html">Learn More</a>
+              <a href="silver-details.html" id="openBtn">Learn More</a>
             </div>
             <div class="membership-types">
               <h3>Bronze Membership</h3>
               <p>Get started with essential benefits and support to establish your business in the community.</p>
-              <a href="bronze-details.html">Learn More</a>
+              <a href="bronze-details.html" id="openBtn">Learn More</a>
             </div>
             <div class="membership-types">
               <h3>Non-Profit Membership</h3>
               <p>Special membership designed for non-profit organizations to connect and thrive.</p>
-              <a href="nonprofit-details.html">Learn More</a>
+              <a href="nonprofit-details.html" id="openBtn">Learn More</a>
             </div>
           </div>
+          <dialog id="dialogBox">
+            <button id="clsoeBtn"></button>
+          </dialog>
       </section>
-      <section id="form" class="form">
+      <section id="form-section" class="form-section">
         <h2>Membership Application Form</h2>
-        <form action="thankyou.html" method="post">
+        <form action="thankyou.html" method="get">
           <label for="firstname">
             Firstname:
             <input
@@ -175,10 +178,8 @@
             </textarea>
           </label>
 
-          <label for="date">
-            Date of Registration:
-            <input type="hidden" id="date" name="date" >
-          </label>
+          <input type="hidden" id="timestamp" name="timestamp">
+
           <button type="submit">Join Us</button>
 
         </form>
@@ -217,6 +218,7 @@
           <!-- dynamically generated -->
         </div>
       </footer>
+      <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/join.js"></script>
     <script src="scripts/base.js"></script>
 
