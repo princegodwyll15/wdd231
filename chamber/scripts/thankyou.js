@@ -1,25 +1,25 @@
 function displayclientData() {
-    const getclientInfo = window.location.search;
-    console.log(getclientInfo);
+  const getclientInfo = window.location.search;
+  console.log(getclientInfo);
 
-    const retrieveData = new URLSearchParams(getclientInfo);
+  const retrieveData = new URLSearchParams(getclientInfo);
 
-    const clientInfo = {
-        firstname: retrieveData.get('firstname'),
-        lastname: retrieveData.get('lastname'),
-        title: retrieveData.get('title'),
-        email: retrieveData.get('email'),
-        mobile: retrieveData.get('mobile'),
-        business: retrieveData.get('bname'),
-        membership: retrieveData.get('membership'),
-        description: retrieveData.get('description'),
-        date: retrieveData.get('timestamp'),
-    };
+  const clientInfo = {
+    firstname: retrieveData.get("firstname"),
+    lastname: retrieveData.get("lastname"),
+    title: retrieveData.get("title"),
+    email: retrieveData.get("email"),
+    mobile: retrieveData.get("mobile"),
+    business: retrieveData.get("bname"),
+    membership: retrieveData.get("membership"),
+    description: retrieveData.get("description"),
+    date: retrieveData.get("timestamp"),
+  };
 
-    const thankyouContainer = document.querySelector("#thank-you");
-    thankyouContainer.innerHTML = "";
+  const thankyouContainer = document.querySelector("#thank-you");
+  thankyouContainer.innerHTML = "";
 
-    thankyouContainer.innerHTML = `
+  thankyouContainer.innerHTML = `
         <p><strong>Firstname:</strong> ${clientInfo.firstname}</p>
         <p><strong>Lastname:</strong> ${clientInfo.lastname}</p>
         <p><strong>Title:</strong> ${clientInfo.title}</p>
