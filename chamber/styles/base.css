@@ -27,7 +27,7 @@ section.visible {
   transform: translateY(0);
 }
 header{
-  border: 20px solid var(--background-color);
+  border: 10px solid var(--background-color);
   position: sticky;
   z-index: 1000;
   top: 0;
