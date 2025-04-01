@@ -29,7 +29,7 @@ function displayclientData() {
         <p><strong>Description:</strong> ${clientInfo.description}</p>
         <p><strong>Date:</strong> ${clientInfo.date}</p>
         <p><strong>Membership:</strong> ${clientInfo.membership}</p>
-        <h2>Hi ${clientInfo.firstname} ${clientInfo.lastname} You have been registered successfully!</h2>
+        <h5>Hi ${clientInfo.firstname} ${clientInfo.lastname} You have been registered successfully!</h5>
         <a href="index.html" id="goBack">go to homepage</a>
     `;
 }

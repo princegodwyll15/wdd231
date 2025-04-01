@@ -1,10 +1,12 @@
 .main-directory {
-    width: 100%;
+    width: 98%;
+    margin: auto;
     font-size: 20px;
     color: var(--background-color);
   }
 
   .main-directory h1{
+    margin: 5px 0px 5px 5px;
     font-size: 1.5rem;
     color: var(--background-color);
   }
@@ -16,7 +18,7 @@
   
 
   .toggleDisplay {
-    margin-top: .5rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +28,7 @@
     background-color: var(--background-color);
     color: var(--text-color);
     width: 100%;
+    margin-top: -8px;
     padding: .5rem;
     font-size: 20px;
     outline: none;
@@ -40,6 +43,8 @@
   
   /* Card View Styles */
   .card-container {
+    width: 98%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
@@ -62,7 +67,6 @@
   
   .card h2 {
     font-size: 1.2em;
-    margin-bottom: 5px;
     color: var(--background-color);
   }
   
@@ -86,7 +90,8 @@
   .list,
   .listHeaderContainer {
     display: flex;
-    width: 100%;
+    width: 98%;
+    margin: 0 auto;
     background-color: var(--primary-color);
     color: var(--background-color);
   }
@@ -94,10 +99,10 @@
   .listHeaderContainer button {
     width: 100%;
     outline: none;
-    font-weight: 900;
+    font-weight: 600;
     border: none;
     color: var(--background-color);
-    padding: 1rem;
+    padding: .5rem;
   }
 
   .lis img {

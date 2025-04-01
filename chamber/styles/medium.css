@@ -78,23 +78,11 @@
     margin: 0 auto;
   }
 
-  .membership-types {
-    flex: 1 1 calc(30% - 20px); /* Two items per row */
-  }
-  
-
   footer {
     font-size: 14px;
   }
 }
 
-
-
-@media (max-width: 480px) {
-.membership-types {
-  flex: 1 1 100%; /* One item per row */
-}
-}
 
 /* Responsive Layout */
 @media (max-width: 768px) {
@@ -106,7 +94,7 @@
     flex: 1 1 100%; 
   }
 
-  main {
+  .main-join {
     display: flex;
     flex-direction: column;
   }
@@ -121,7 +109,7 @@
 }
 
 @media (min-width: 769px) {
-    main {
+    .main-join {
         display: grid;
         grid-template-columns: 1fr 1fr; 
         grid-gap: 20px;
