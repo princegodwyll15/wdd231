@@ -15,4 +15,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .galleryContainer .galleryCard img{
+    transition: all ease .3s;
+  }
+  .galleryContainer .galleryCard img:hover{
+    box-shadow: 0 0 5px #918e8e;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 }
