@@ -1,3 +1,5 @@
+import { members } from '../data/members.mjs';
+
 // Select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
@@ -90,18 +92,14 @@ function displayForecast(data) {
 getWeather();
 getForecast();
 
-const data = "./data/members.json";
 let businessData;
 
 // Create spotlight section
 async function creatSpotlight() {
   try {
-    const response = await fetch(data);
-    if (!response.ok) throw new Error("Failed to fetch business data.");
-    const responsetoJSON = await response.json();
-    businessData = await shuffleArray(responsetoJSON).slice(0, 3);
+    businessData = await shuffleArray(members).slice(0, 3);
     console.log(businessData);
-        spotlightTemplate();
+    spotlightTemplate();
   } catch (err) {
     console.error("Error fetching or processing business data:", err);
   }
@@ -109,8 +107,7 @@ async function creatSpotlight() {
 
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
-  }
-
+}
 
 function spotlightTemplate() {
     const spotlightContainer = document.querySelector('.spotlight');
@@ -118,7 +115,7 @@ function spotlightTemplate() {
         console.error("Spotlight container not found in the DOM.");
         return;
     }
-    
+
     const spotlightBusinesses = document.querySelector(".spotlight-container");
     if (!spotlightBusinesses) {
         console.error("Spotlight container for cards not found in the DOM.");
@@ -132,11 +129,10 @@ function spotlightTemplate() {
         const spotlightCard = document.createElement("div");
         spotlightCard.className = "spotlightCard";
 
-        // Create and append business name
         const memberName = document.createElement("h3");
         memberName.textContent = business.name;
         spotlightCard.appendChild(memberName);
-        
+
         const memberImage = document.createElement("img");
         memberImage.src = business.image;
         memberImage.loading = "lazy";
@@ -145,34 +141,26 @@ function spotlightTemplate() {
         memberImage.height = 100;
         spotlightCard.appendChild(memberImage);
 
-
-        // Create and append business address
         const memberAddress = document.createElement("p");
         memberAddress.textContent = `Address: ${business.address}`;
         spotlightCard.appendChild(memberAddress);
 
-        // Create and append business phone number
         const memberPhoneNumber = document.createElement("p");
         memberPhoneNumber.textContent = `Phone: ${business.phone}`;
         spotlightCard.appendChild(memberPhoneNumber);
 
-        // Create and append business website link
         const memberWebsite = document.createElement("a");
         memberWebsite.href = business.website;
         memberWebsite.textContent = `Visit our site`;
         memberWebsite.target = "_blank";
         spotlightCard.appendChild(memberWebsite);
 
-        // Create and append business image
-
-        // Create and append membership level
         const membershipLevel = document.createElement("p");
         membershipLevel.textContent = `Membership Level: ${business.membership_level}`;
         spotlightCard.appendChild(membershipLevel);
 
-        // Append the spotlight card to the container
         spotlightWrapper.appendChild(spotlightCard);
         spotlightBusinesses.appendChild(spotlightCard);
     });
 }
-creatSpotlight()
+creatSpotlight();

@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+.main-discover{
+    width: 100%;
+}
+
+.galleryContainer{
+    margin: 0;
+    padding: 0;
+}
+.galleryContainer .galleryCard{
+    border-radius: 10px;
+    margin: 1rem 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "description"
+    "address"
+    "buttonLearnmore"
+    ;
+    margin: 1rem 8px;
+    background-color: var(--primary-color);
+}
+.galleryContainer .galleryCard h2{
+    margin: .2rem 10px;
+    grid-area: name;
+}
+.galleryContainer .galleryCard img{
+    width: 100%;
+}
+
+.galleryContainer .galleryCard figure{
+    margin: 1rem 1rem;
+    padding: 0;
+    grid-area: image;
+}
+
+.galleryContainer .galleryCard p{
+    margin: 0 10px;
+    grid-area: description;
+}
+
+.galleryContainer .galleryCard address{
+    margin: 1rem 10px;
+    grid-area: address;
+}
+
+
+.galleryContainer .galleryCard button{
+    margin: 1rem 10px;
+    padding: .5rem;
+    opacity: .8;
+    outline: none;
+    grid-area: buttonLearnmore;
+    cursor: pointer;
+    transition: opacity ease .3s;
+}
+
+.galleryCard button:hover{
+    opacity: 1;
+    background-color: var(--background-color);
+    color: var(--text-color)
+}

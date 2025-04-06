@@ -1,15 +1,13 @@
-const url = "./data/members.json";
+import { members } from "../data/members.mjs";
 
 let currentView; // Default view
 
 async function getMembers() {
-    const response = await fetch(url);
-    const data = await response.json();
-    console.table(data);
+    console.table(members);
     if (currentView === 'list') {
-        displayMembersList(data);
+        displayMembersList(members);
     } else {
-        displayMembersCard(data);
+        displayMembersCard(members);
     }
 }
 

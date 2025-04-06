@@ -1,4 +1,4 @@
-[
+export const members = [
   {
     "name": "Accra Tech Solutions",
     "address": "123 Liberation Road, Accra, Ghana",

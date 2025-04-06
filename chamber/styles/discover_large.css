@@ -1,0 +1,565 @@
+@media only screen and (min-width:64rem) {
+/* discover page large */
+
+    .galleryContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+/* directorypage large */
+    .main-directory {
+        width: 98%;
+        margin: auto;
+        font-size: 20px;
+        color: var(--background-color);
+      }
+    
+      .main-directory h1{
+        margin: 5px 0px 5px 5px;
+        font-size: 1.5rem;
+        color: var(--background-color);
+      }
+      
+      /* Directory */
+      .directory {
+        padding: 0;
+      }
+      
+    
+      .toggleDisplay {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .toggleDisplay button {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        width: 100%;
+        margin-top: -8px;
+        padding: .5rem;
+        font-size: 20px;
+        outline: none;
+        border: none;
+        transition: ease-out 0.3s;
+      }
+      
+      .toggleDisplay button:hover {
+        color: var(--secondary-color);
+        cursor: pointer;
+      }
+      
+      /* Card View Styles */
+      .card-container {
+        width: 98%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 20px;
+      }
+      
+      .card {
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: justify;
+        background-color: var(--primary-color);
+      }
+      
+      .card img {
+        max-width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+      }
+      
+      .card h2 {
+        font-size: 1.2em;
+        color: var(--background-color);
+      }
+      
+      .card p,
+      .card a,
+      .list a {
+        font-size: .8em;
+        color: var(--background-color);
+      }
+      
+      .card a:hover,
+      .list a:hover {
+        color: var(--secondary-color);
+      }
+      
+      /* List View Styles */
+      .list-container {
+        color: var(--primary-color);
+      }
+      
+      .list,
+      .listHeaderContainer {
+        display: flex;
+        width: 98%;
+        margin: 0 auto;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+      }
+      
+      .listHeaderContainer button {
+        width: 100%;
+        outline: none;
+        font-weight: 600;
+        border: none;
+        color: var(--background-color);
+        padding: .5rem;
+      }
+    
+      .lis img {
+        max-width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+      }
+    
+      
+      .list h2,
+      .list p,
+      .list a {
+        font-size: 16px;
+        text-align: center;
+        width: 16.67%;
+      }
+
+
+      /* home page styles here */
+      .main-home {
+        padding: 0;
+        width: 100%;
+      }
+      
+      .main-home h1 {
+        font-size: 25px;
+        font-weight: 400;
+        padding: .5rem;
+        color: var(--background-color);
+      }
+      
+      .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 60vh;
+        width: 100%;
+        background-image: url("../images/hero.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px 10px 0 0;
+        color: var(--text-color);
+        color: var(--background-color);
+      }
+      
+      .hero-content {
+        box-shadow: 0 2px 30px rgba(58, 145, 15, 0.1);
+      }
+      
+      .hero-content h1 {
+        font-size: 3rem;
+      }
+      
+      .hero-content p {
+        color: var(--background-color);
+        font-size: 1.5rem;
+      }
+      
+      .cta-button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: var(--secondary-color);
+        color: var(--background-color);
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+      
+      .cta-button:hover {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        transform: scale(1.05);
+      }
+      
+      /* Events Section */
+      .event {
+        padding: 2rem;
+      }
+      
+      .event h2 {
+        color: var(--background-color);
+      }
+      
+      .eventWrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .event-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        gap: 2rem;
+      }
+      
+      .eventCard {
+        background-color: var(--primary-color);
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        padding: 1rem;
+      }
+      
+      .eventCard img {
+        width: 80%;
+        height: 30vh;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      .eventCard h3 {
+        font-size: 1.5rem;
+        color: var(--background-color);
+        margin: 1rem 0;
+      }
+      
+      .eventCard p {
+        font-size: 1rem;
+        color: var(--background-color);
+        margin: 0.5rem 0;
+      }
+      
+      .eventCard a {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: var(--secondary-color);
+        color: var(--background-color);
+        font-weight: 900;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+      
+      .eventCard a:hover{
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+      /* Spotlight Section */
+      .spotlight {
+        width: auto;
+        max-width: 1200px;
+        background-color: var(--background-color);
+        border-radius: 10px;
+        color: var(--text-color);
+        margin: 2rem auto;
+        box-shadow: 0 2px 30px rgba(125, 131, 195, 0.1);
+      }
+      
+      .spotlight h2 {
+        padding: 1rem;
+      }
+      
+      .spotlight-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin: 0 auto;
+      }
+      .spotlightWrapper {
+        color: var(--text-color);
+      }
+      
+      .spotlightCard {
+        position: relative;
+        margin: 0.5rem auto;
+        padding: 0.5rem;
+        text-align: left;
+        width: 90%;
+        border-radius: 10px;
+        box-shadow: 0 2px 30px rgba(125, 131, 195, 0.1);
+      }
+      
+      .spotlightCard img {
+        float: right;
+      }
+      
+      /* General styling for the weather section */
+      section.weather {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        color: var(--background-color);
+      }
+      
+      .weather-container {
+        display: grid;
+        border-radius: 20px;
+        box-shadow: 0 8px 4px rgba(0, 0, 0, 0.2);
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .current-weather {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .current-weather h2,
+      .current-weather p,
+      .weatherCard {
+        font-size: 16px;
+      }
+      
+      .weatherCard {
+        background-color: #ffffff;
+        border-bottom: 1px solid var(--background-color);
+        border-radius: 8px;
+      }
+      
+      .weatherCard img {
+        width: auto;
+        height: auto;
+      }
+      
+      .forecast-container {
+        display: grid;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 10px;
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+        color: var(--background-color);
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+      }
+      
+      
+      /* join page styles on large scrrens */
+      /* General Styles (Keep as is) */
+.main-join {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: var(--background-color);
+  }
+  
+  h1 {
+    padding: .5rem 0rem 0 2rem;
+    color: var(--background-color);
+  }
+  
+  form {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  form input,
+  form textarea {
+    display: block;
+    width: 98%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  form input[type="radio"] {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  form input[type="radio"]:focus:invalid,
+  form input[type="radio"]:focus:valid {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  
+  form input:focus:valid {
+    outline: none;
+    border: 2px solid darkgreen;
+    box-shadow: 0 0 8px darkgreen;
+  }
+  
+  form input:focus:invalid {
+    outline: none;
+    border: 2px solid darkred;
+    box-shadow: 0 0 8px darkred;
+  }
+  
+  form textarea {
+    resize: none;
+  }
+  
+  form button {
+    padding: 1rem;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: none;
+    width: 102%;
+    border-radius: 10px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  form button:hover {
+    opacity: 1;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    width: 96%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: var(--background-color);
+  }
+  
+  /* Membership Section */
+  .membership-level {
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .membership-types {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .membership-types:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .membership-types h3 {
+    font-size: 1.2rem;
+    color: var(--background-color);
+    margin-bottom: 10px;
+  }
+  
+  .membership-types p {
+    font-size: 0.9rem;
+    color: var(--background-color);
+    margin-bottom: 15px;
+  }
+  
+  ::backdrop {
+    background-color: rgba(217, 216, 216, 0.5);
+    backdrop-filter: blur(10px);
+  }
+  
+  #dialogBox {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  dialog > button {
+    display: inline-block;
+    background-color: red;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .membership-types a {
+    display: inline-block;
+    background-color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .membership-types a:hover,
+  #closeBtn:hover {
+    color: var(--background-color);
+    color: #fff;
+  }
+  
+  #goBack {
+    background-color: var(--secondary-color);
+    margin: .5rem;
+    padding: .5rem;
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: .8rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  #goBack:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transform: scale(1.05);
+  }
+  
+  
+      
+}
+
+
+

@@ -144,3 +144,14 @@
   }
 }
 
+@media only screen and (min-width:38rem) {
+  
+.galleryContainer .galleryCard{
+  grid-template-areas: 
+  "image name"
+  "image description"
+  "image address"
+  "image buttonLearnmore"
+  ;
+}
+}
