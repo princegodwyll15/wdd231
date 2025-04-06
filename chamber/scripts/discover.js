@@ -19,6 +19,7 @@ function buildGallery(responses) {
 
     const galleryImg = document.createElement("img");
     galleryImg.setAttribute("src", response.discoverImg);
+    galleryImg.setAttribute("loading", "lazy")
     galleryImg.setAttribute("alt", "gallery image loading");
 
     galleryFigure.appendChild(galleryImg);

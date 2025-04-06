@@ -75,6 +75,10 @@ header{
 .nav-links li a:hover {
   text-decoration: underline;
 }
+
+
+/* footer */
+
 /* FOOTER */
 footer {
   display: grid;
@@ -85,10 +89,16 @@ footer {
   width: 100%;
   background-color: var(--background-color);
   color: var(--text-color);
+  height: 100%; /* Ensure footer takes up predictable height */
 }
 
-footer .footer-info {
+footer .footer-info,
+footer .footer-last-modified {
   padding: 0.5rem;
+}
+
+footer .footer-nav {
+  width: 100%; /* Ensure full width for navigation items */
 }
 
 footer .footer-nav a {
@@ -105,14 +115,23 @@ footer .footer-social-media i:hover {
 
 .footer-social-media {
   display: flex;
+  gap: 0.5rem; /* Space between social media icons */
 }
 
 .footer-social-media img {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  object-fit: cover; 
+  display: block; 
 }
 
-.footer-last-modified {
-  padding: 0.5rem;
+footer .footer-nav a,
+.footer .footer-social-media img {
+  width: 100%; 
+}
+
+
+html {
+  font-family: 'Times New Roman', Times, serif;
 }
