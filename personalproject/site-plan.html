@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/site-plan.css">
+    <title>Site Plan for To-Do List App with JSON Storage</title>
+  </head>
+  <body>
+    <header>
+      <h1>Site Plan for To-Do List App with JSON Storage</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>1. Site Name</h2>
+        <p><strong>Site Name:</strong> TaskMaster</p>
+        <p
+          ><strong>Reason for Selection:</strong> "TaskMaster" reflects the
+          app's purpose of helping users manage and "master" their tasks. It is
+          simple, memorable, and relevant to the target audience who are looking
+          to stay organized and in control of their to-do list.</p
+        >
+        <p
+          ><strong>Optional Domain Availability:</strong> taskmaster-app.com
+          (example, check availability through a domain provider)</p
+        >
+      </section>
+
+      <section>
+        <h2>2. Site Purpose</h2>
+        <p
+          ><strong>Purpose:</strong> The "TaskMaster" app is a simple to-do list
+          manager that allows users to create, edit, delete, and organize their
+          tasks. The app utilizes the browser's local storage to save tasks in
+          JSON format, ensuring that data persists across sessions.
+          Additionally, users can set due dates, prioritize tasks, and mark
+          tasks as completed.</p
+        >
+
+        <h3>Key Features:</h3>
+        <ul>
+          <li>Task creation, editing, and deletion.</li>
+          <li>Task prioritization and due date management.</li>
+          <li
+            >Data stored in JSON format using local storage for persistence.</li
+          >
+          <li>Simple and intuitive interface for easy task management.</li>
+          <li
+            >Optional reminder system for due tasks (can be added as an advanced
+            feature).</li
+          >
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Scenarios</h2>
+        <p
+          >These are common questions that a visitor to the site (target user)
+          might ask when using the app:</p
+        >
+        <ul>
+          <li
+            ><strong>How do I add a new task?</strong> A user can input the
+            task's name, set a due date (optional), and assign a priority level
+            (optional). After clicking the "Add Task" button, the task will
+            appear in the list and be stored in local storage.</li
+          >
+          <li
+            ><strong>Can I set reminders for tasks?</strong> Users can set a
+            reminder (optional feature) to be notified before a task's due date
+            using the Notification API or browser alerts.</li
+          >
+          <li
+            ><strong>How do I mark a task as completed?</strong> Tasks can be
+            marked as completed by checking a box or clicking a "Mark as
+            Completed" button next to each task.</li
+          >
+          <li
+            ><strong>Can I delete a task?</strong> Users can easily delete a
+            task by clicking a delete button next to the task in the task
+            list.</li
+          >
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Color Scheme</h2>
+        <p
+          >The color scheme should be simple and effective for both aesthetics
+          and usability. It should be designed for readability and a clean
+          look.</p
+        >
+        <ul>
+          <li
+            ><strong>Primary Color:</strong> #3498db (Blue) - Used for headers,
+            buttons, and accents to create a vibrant and modern look.</li
+          >
+          <li
+            ><strong>Secondary Color:</strong> #2ecc71 (Green) - Used for task
+            completion buttons and accents like task priorities, or used for the
+            task status to highlight completed tasks.</li
+          >
+          <li
+            ><strong>Background Color:</strong> #f4f4f9 (Light Gray) - Used as
+            the general background color for the entire site to ensure a clean
+            and easy-to-read interface.</li
+          >
+          <li
+            ><strong>Text Color:</strong> #2c3e50 (Dark Text) - Used for body
+            text, task names, and other text elements to ensure good contrast
+            and readability.</li
+          >
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Typography</h2>
+        <p>The typography should be simple and readable across all devices.</p>
+        <ul>
+          <li
+            ><strong>Primary Font:</strong> Roboto (from Google Fonts) - Used
+            for the entire body text for easy readability.</li
+          >
+          <li
+            ><strong>Secondary Font (optional):</strong> Arial (fallback font) -
+            Used for fallback in case Roboto is unavailable.</li
+          >
+          <li
+            ><strong>Headings:</strong> Use Roboto Bold for headings to create
+            distinction between titles and body text.</li
+          >
+          <li
+            ><strong>Body Text:</strong> Use Roboto Regular for general content
+            and task descriptions.</li
+          >
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Wireframe</h2>
+      </section>
+
+      <section>
+        <h2>7. Technical Requirements</h2>
+        <ul>
+          <li
+            ><strong>HTML:</strong> The app will be built with clean, semantic
+            HTML5 elements.</li
+          >
+          <li
+            ><strong>CSS:</strong> Basic CSS for layout, responsiveness, and
+            design. The layout will adapt to mobile and desktop views.</li
+          >
+          <li
+            ><strong>JavaScript:</strong> Used to handle task management
+            (adding, editing, deleting, and marking tasks as completed). JSON
+            storage via localStorage will be used for storing tasks.</li
+          >
+          <li
+            ><strong>Browser Compatibility:</strong> The app should be
+            compatible with modern browsers (Google Chrome, Mozilla Firefox,
+            Microsoft Edge).</li
+          >
+          <li
+            ><strong>Responsive Design:</strong> The design will be responsive
+            using CSS media queries, so it adjusts according to screen size.</li
+          >
+        </ul>
+      </section>
+
+      <section>
+        <h2>8. Performance and Accessibility</h2>
+        <ul>
+          <li
+            ><strong>Performance:</strong> The app will be lightweight and load
+            quickly by only utilizing the necessary HTML, CSS, and
+            JavaScript.</li
+          >
+          <li
+            ><strong>Accessibility:</strong> The app will include ARIA roles,
+            keyboard navigability, and proper color contrast to ensure
+            accessibility for users with disabilities.</li
+          >
+        </ul>
+      </section>
+
+      <section>
+        <h2>9. Future Enhancements (Optional Features)</h2>
+        <ul>
+          <li
+            ><strong>Reminders:</strong> A feature that sends browser
+            notifications or alerts when a task's due date is near.</li
+          >
+          <li
+            ><strong>Task Categories:</strong> The ability to categorize tasks
+            (e.g., work, personal).</li
+          >
+          <li
+            ><strong>Dark Mode:</strong> A dark theme for better visibility in
+            low-light environments.</li
+          >
+          <li
+            ><strong>Synchronization:</strong> Integration with cloud storage
+            for syncing tasks across multiple devices.</li
+          >
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>TaskMaster - To-Do List App</p>
+    </footer>
+  </body>
+</html>
