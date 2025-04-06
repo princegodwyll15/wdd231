@@ -73,10 +73,6 @@
     box-shadow: none;
     transform: none;
   }
-  .main-discover h1 {
-    font-size: 14px;
-  }
-
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -84,8 +80,4 @@
         box-shadow: none;
         transform: none;
       }    
-      .main-discover h1 {
-        font-size: 14px;
-      }
-    
 }
