@@ -10,7 +10,6 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    background-color: transparent;
     text-align: right;
     margin: 0;
     padding: 0;
@@ -39,10 +38,15 @@
     justify-content: space-between;
   }
 
-  .mainhead {
-    flex-shrink: 0;
+  .task-item {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+    padding: 1rem;
   }
-
+  
 /* ========== Weather Section Styles ========== */
 .weather, .forecast {
   background-color: white;

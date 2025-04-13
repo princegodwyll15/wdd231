@@ -3,7 +3,6 @@ const navigation = document.querySelector(".main-nav");
 const footerYear = document.getElementById("copyright");
 const lastModified = document.getElementById("lastModified");
 
-// Footer content
 const date = new Date();
 footerYear.textContent = `© ${date.getFullYear()} TaskMaster, All Rights Reserved`;
 lastModified.textContent = `Last modified: ${new Date(document.lastModified).toLocaleDateString("en-US", {
@@ -16,34 +15,23 @@ lastModified.textContent = `Last modified: ${new Date(document.lastModified).toL
 hamburger.addEventListener('click', ()=>{
   navigation.classList.toggle('visible');
 })
-// Display current time
+
+// Clock
 function getTime() {
   let h = new Date().getHours();
   let m = new Date().getMinutes();
   let s = new Date().getSeconds();
-
-  h = h < 10 ? '0' + h : h;
-  m = m < 10 ? '0' + m : m;
-  s = s < 10 ? '0' + s : s;
-
-  return "Current Time: " + h + ":" + m + ":" + s;
+  return `Current Time: ${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
 }
-
-// Start the clock
 function startClock() {
   setInterval(() => {
     document.getElementById("timeCont").textContent = getTime();
   }, 1000);
 }
 
-// Start when page finishes loading
-window.onload = function() {
-  startClock();  // Start the clock
-  renderTasks(); // Render the tasks
-}
-
+// Task Logic
 let currentlyEditingId = null;
-// Add or Edit Task
+
 function addTask(event) {
   event.preventDefault();
 
@@ -70,17 +58,7 @@ function addTask(event) {
       const newTask = {
         id: Date.now(),
         dateAdded: new Date().toDateString(),
-        timeAdded: (() => { 
-          let h = new Date().getHours();
-          let m = new Date().getMinutes();
-          let s = new Date().getSeconds();
-        
-          h = h < 10 ? '0' + h : h;
-          m = m < 10 ? '0' + m : m;
-          s = s < 10 ? '0' + s : s;
-        
-          return h + ":" + m + ":" + s; 
-        })(),
+        timeAdded: getTime().replace("Current Time: ", ""),
         name: fullName, 
         taskTitle: taskTitle, 
         task: taskInput, 
@@ -91,32 +69,30 @@ function addTask(event) {
     localStorage.setItem('tasks', JSON.stringify(taskList));
     renderTasks();
 
-    // Clear inputs
     document.getElementById('fullname').value = '';
     document.getElementById('taskTitle').value = '';
     document.getElementById('task').value = '';
   }
 }
 
-// Render tasks to the page
 function renderTasks() {
   const taskList = JSON.parse(localStorage.getItem("tasks")) || [];
   const tasklistDisplay = document.getElementById("tasklistDisplay");
-  tasklistDisplay.innerHTML = "";  // Clear the existing task list
+  tasklistDisplay.innerHTML = "";
 
   taskList.forEach(task => {
     const taskContainer = document.createElement("div");
     taskContainer.classList.add("task-item");
 
     taskContainer.innerHTML = `
-      <p><strong>Date Added: </strong> ${task.dateAdded} </p>
-      <p><strong>Time Added: </strong> ${task.timeAdded}</p>
-      <p><strong>Task Title: </strong> ${task.taskTitle}</p>
-      <p><strong>Main Task: </strong>${task.task}</p>
-      <p><strong><em>By: </strong>${task.name}</em></p>
+      <p><strong>Date Added:</strong> ${task.dateAdded}</p>
+      <p><strong>Time Added:</strong> ${task.timeAdded}</p>
+      <p><strong>Task Title:</strong> ${task.taskTitle}</p>
+      <p><strong>Main Task:</strong> ${task.task}</p>
+      <p><strong><em>By:</strong> ${task.name}</em></p>
       <p>
-        <span style="cursor: pointer; color: blue;" onclick="editTask(${task.id})">Edit</span> | 
-        <span style="cursor: pointer; color: red;" onclick="deleteTask(${task.id})">Delete</span>
+        <span style="cursor: pointer; color: blue;" onclick="editTask(${task.id})">Edit</span> |
+        <span style="cursor: pointer; color: green;" onclick="deleteTask(${task.id})">Delete</span>
       </p>
     `;
 
@@ -124,7 +100,6 @@ function renderTasks() {
   });
 }
 
-// Delete task
 function deleteTask(taskId) {
   let taskList = JSON.parse(localStorage.getItem("tasks")) || [];
   let deletedList = JSON.parse(localStorage.getItem("deletedTasks")) || [];
@@ -139,7 +114,6 @@ function deleteTask(taskId) {
   }
 }
 
-// Load task into input for editing
 function editTask(taskId) {
   const taskList = JSON.parse(localStorage.getItem("tasks")) || [];
   const task = taskList.find(task => task.id === taskId);
@@ -154,6 +128,9 @@ function editTask(taskId) {
   }
 }
 
-// Event Listeners
-document.getElementById("addTaskButton").addEventListener("click", addTask);
+window.onload = function () {
+  startClock();
+  renderTasks();
+};
+
 document.querySelector(".input-section")?.addEventListener("submit", addTask);
