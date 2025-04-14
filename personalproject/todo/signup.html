@@ -19,9 +19,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/login_out.css" />
 
     <link rel="icon" href="images/taskMasterlogo.webp" />
     <title>TaskMaster</title>
@@ -44,30 +42,29 @@
           <li><a href="deleted.html">Deleted Task</a></li>
           <li><a href="all-task.html">View All Task</a></li>
           <li><a href="about.html">About TaskMaster</a></li>
-          <li><a href="weather.html">Weather forecast</a></li>
+          <li><a href="about.html">Weather forecast</a></li>
         </ul>
       </nav>
     </header>
     <main>
-    <section class="logout">
-      <button id="logOut">Logout</button>
-    </section>
-
-      <section class="clock">
-        <p id="timeCont">Current Time:</p>
-      </section>
-
-      <h1>Add Task here</h1>
-      <section class="task-section">
-        <form class="input-section">
-          <input type="text" id="fullname" placeholder="Your name" required />
-          <input type="text" id="taskTitle" placeholder="Task title" required />
-          <textarea id="task" placeholder="Enter your task" required></textarea>
-          <button id="addTaskButton" type="submit">Add Task</button>
-        </form>
-
-        <h2>Your Tasks</h2>
-        <div id="tasklistDisplay"></div>
+      <h1>Create Account</h1>
+      <form id="signupForm">
+        <div id="formFeedback"></div>
+        <input
+          type="text"
+          id="signupUsername"
+          placeholder="Username"
+          required
+        />
+        <input
+          type="password"
+          id="signupPassword"
+          placeholder="Password"
+          required
+        />
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="login.html">Login</a></p>
     </main>
     <footer>
       <div class="nav-footer">
@@ -83,7 +80,6 @@
         <p id="copyright">&copy; 2025 TaskMaster. All Rights Reserved</p>
       </div>
     </footer>
-    <script src="scripts/todo.js"></script>
     <script src="scripts/auth.js"></script>
   </body>
 </html>
