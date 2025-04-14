@@ -16,6 +16,15 @@ hamburger.addEventListener('click', ()=>{
   navigation.classList.toggle('visible');
 })
 
+  //Logout Handling
+  const logoutBtn = document.querySelector("#logOut");
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", function () {
+      localStorage.removeItem("taskmasterUser"); // Remove user from localStorage on logout
+      window.location.href = "login.html"; 
+    });
+  }
+
 // Clock
 function getTime() {
   let h = new Date().getHours();

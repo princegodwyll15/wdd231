@@ -116,14 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-  //Logout Handling
-  const logoutBtn = document.querySelector("#logOut");
-  if (logoutBtn) {
-    logoutBtn.addEventListener("click", function () {
-      localStorage.removeItem("taskmasterUser"); // Remove user from localStorage on logout
-      window.location.href = "login.html"; 
-    });
-  }
 
   //Utility Function to Create Feedback Element
   function createFeedbackElement(parent) {

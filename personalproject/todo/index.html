@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="author" content="Prince Godwyll" />
-    <meta
-      name="description"
-      content="A simple to do app with localstorage and api"
-    />
-    <meta property="og:title" content="TaskMaster" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://princegodwyll15.github.io/wdd231/chamber/images/taskMasterlogo.webp"
-    />
-    <meta
-      property="og:url"
-      content="https://princegodwyll15.github.io/wdd231/personalproject/todo/"
-    />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/large.css" />
+<head>
+  <meta name="author" content="Prince Godwyll">
+  <meta name="description" content="A simple to do app with localstorage and api">
+  <meta property="og:title" content="TaskMaster">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://princegodwyll15.github.io/wdd231/personalproject/todo/images/taskMasterlogo.webp">
+  <meta property="og:url" content="https://princegodwyll15.github.io/wdd231/personalproject/todo/">
 
-    <link rel="icon" href="images/taskMasterlogo.webp" />
-    <title>TaskMaster</title>
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
 
-  <body>
-    <header>
-      <div class="mainhead">
-        <h1>TaskMaster</h1>
-        <img src="images/taskMasterlogo.webp" alt="logo" loading="lazy" />
-      </div>
+  <link rel="icon" href="images/taskMasterlogo.webp">
+  <title>TaskMaster</title>
+</head>
 
-      <div class="hamburger">
-        <button>&#9776;</button>
-      </div>
+<body>
+  <header>
+    <div class="mainhead">
+      <h1>TaskMaster</h1>
+      <img src="images/taskMasterlogo.webp" alt="logo" loading="lazy">
+    </div>
 
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="deleted.html">Deleted Task</a></li>
-          <li><a href="all-task.html">View All Task</a></li>
-          <li><a href="about.html">About TaskMaster</a></li>
-          <li><a href="weather.html">Weather forecast</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="hamburger">
+      <button>&#9776;</button>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="deleted.html">Deleted Task</a></li>
+        <li><a href="all-task.html">View All Task</a></li>
+        <li><a href="about.html">About TaskMaster</a></li>
+        <li><a href="weather.html">Weather forecast</a></li>
+      </ul>
+      </ul>
+    </nav>
+  </header>
     <main>
     <section class="logout">
       <button id="logOut">Logout</button>
@@ -60,8 +53,8 @@
       <h1>Add Task here</h1>
       <section class="task-section">
         <form class="input-section">
-          <input type="text" id="fullname" placeholder="Your name" required />
-          <input type="text" id="taskTitle" placeholder="Task title" required />
+          <input type="text" id="fullname" placeholder="Your name" required>
+          <input type="text" id="taskTitle" placeholder="Task title" required>
           <textarea id="task" placeholder="Enter your task" required></textarea>
           <button id="addTaskButton" type="submit">Add Task</button>
         </form>
@@ -84,6 +77,5 @@
       </div>
     </footer>
     <script src="scripts/todo.js"></script>
-    <script src="scripts/auth.js"></script>
   </body>
 </html>
