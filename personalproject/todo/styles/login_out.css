@@ -201,34 +201,27 @@ a:hover {
 
 /* ========== Footer ========== */
 footer {
-  display: flex;
   position: fixed;
-  font-weight: 700;
   bottom: 0;
-  justify-content: space-between;
-  align-items: center;
   left: 0;
-  padding: 2rem;
-  background-color: var(--background-color);
   width: 100%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 2rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: var(--background-color);
   color: var(--text-color);
   box-shadow: 23px 4px 20px rgba(49, 59, 201, 0.1);
 }
 
 footer a {
   margin: 0.5rem;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  color: var(--text-color);
-  text-decoration: none;
-  transition: all 0.2s ease;
 }
-
-
-footer a:hover {
-  text-decoration: underline;
+footer p {
+  margin: 0.5rem;
 }
-
 
 @media (min-width: 64rem) {
   .hamburger {
